@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  
+  <title>Github Classroom - IST256</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/readthedocs.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Github Classroom";
+    var mkdocs_page_input_path = "content\\setup\\github-classroom.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2832355-7', 'ist256.syr.edu');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> IST256</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../syllabus/">Syllabus</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../project/">Project</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../blackboard/">Gradebook</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../toc/">Lessons</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../walkthrough/">Programming Walkthrough</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Course Setup</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../overview/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../osx/">Mac OSX</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../win/">Windows</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../su-google/">SU Google Apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../github/">Github</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../gitter/">Gitter.im</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Github Classroom</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#github-classroom-setup">Github Classroom Setup</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#procedure">Procedure</a></li>
+        
+            <li><a class="toctree-l4" href="#get-access-to-our-github-classroom-repository">Get access to our Github Classroom repository</a></li>
+        
+            <li><a class="toctree-l4" href="#clone-the-repository-to-your-computer">Clone the repository to your computer</a></li>
+        
+            <li><a class="toctree-l4" href="#configure-git">Configure Git</a></li>
+        
+            <li><a class="toctree-l4" href="#test-your-setup">Test Your Setup</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../azure/">Azure</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Information</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../faq/">FAQ</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../discuss/">Gitter.im</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../watch/">Videos</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">IST256</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Course Setup &raquo;</li>
+        
+      
+    
+    <li>Github Classroom</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="github-classroom-setup">Github Classroom Setup</h1>
+<p>Now that you have your GitHub account and git installed on your laptop, you need to get access to our class repository, and then clone it to your computer.</p>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li><a href="#get-access-to-our-github-classroom-repository">Get access to our Github Classroom repository</a></li>
+<li><a href="#clone-the-repository-to-your-computer">Clone the repository to your computer</a></li>
+<li><a href="#configure-git">Configure Git</a></li>
+<li><a href="#test-your-setup">Test your setup</a></li>
+</ol>
+<p><strong>NOTE:</strong> For every computer you wish to setup the repository on, you must repeat the last 3 steps. </p>
+<h2 id="get-access-to-our-github-classroom-repository">Get access to our Github Classroom repository</h2>
+<ol>
+<li>Go to the <a href="https://github.com/">https://github.com/</a> website and sign in with your GitHub with the account and password.</li>
+<li>Click on this GitHub Classroom invite link here: <a href="https://classroom.github.com/a/qWFcZxtN">https://classroom.github.com/a/qWFcZxtN</a></li>
+<li>A Page will ask you to accept the assignment. <br />
+ <img alt="images/github-classroom-accept.png" src="../../images/github-classroom-accept.png" /> <br />
+ The part highlighted in yellow will match your GitHub username. <br />
+ Click <strong>Accept this assignment</strong></li>
+<li>You might be asked to accept some permissions. Make sure to accept them. After that you will then see this confirmation screen.<br />
+<img alt="images/github-classroom-done.png" src="../../images/github-classroom-done.png" /></li>
+<li>Click the link at the bottom of the message to go to your repository page. (The link following the text <strong>Your assignment has been created here:</strong>)</li>
+<li>Your repository page will look like this: <br />
+<img alt="images/repository-page.png" src="../../images/repository-page.png" /> <br />
+As usual, the highlighted portions should match your GitHub username.</li>
+</ol>
+<p>This is a one-time setup, and you do not need to repeat this process if you want to clone the repository to more than one computer. </p>
+<h2 id="clone-the-repository-to-your-computer">Clone the repository to your computer</h2>
+<ol>
+<li>From the repository page (where you left off), click on the clone or download button: <br />
+<img alt="images/clone-or-download.png" src="../../images/clone-or-download.png" /> </li>
+<li>Copy the link under <strong>Clone with HTTPS</strong>. </li>
+<li><a href="/faq/#how-do-i-open-a-command-line">Open a command line</a> on your computer in the <strong>IST 256</strong> folder.</li>
+<li>In the command window, type: <code>git clone</code> then paste the link you copied in the first step. The full command should look like this: <br />
+<code>git clone https://github.com/IST256/learn-python-yourgithub.git</code> of course <code>yourgithub</code> will be your actual GitHub account, which if you followed the directions is <code>netid-su</code>. </li>
+<li>The output of the <code>git clone</code> command should look like this: <br />
+<img alt="images/git-clone.png" src="../../images/git-clone.png" /> <br />
+the command I highlighted is outlined in red, my GitHub account is highlighted in yellow.</li>
+</ol>
+<h2 id="configure-git">Configure Git</h2>
+<p>First you must customize git so your commits contain your name and email.</p>
+<ol>
+<li><a href="/faq/#how-do-i-open-a-command-line">Open a command line</a>.</li>
+<li>Type <code>git config --global user.name "Your Name"</code> of course replace <code>Your Name</code> with your name, like <strong>Michael Fudge</strong>. Make sure to keep the quotes. Press <code>ENTER</code> key to accept the command.</li>
+<li>Type <code>git config --global user.email netid@syr.edu</code> and replace <code>netid</code> with your SU NetID. Press the <code>ENTER</code> key to accept the command.</li>
+</ol>
+<h2 id="test-your-setup">Test Your Setup</h2>
+<ol>
+<li>Follow the instructions for: <a href="/faq/#how-do-i-commit-my-code-and-push-to-github">How do I commit my code and push to GitHub?</a></li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../azure/" class="btn btn-neutral float-right" title="Azure">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../gitter/" class="btn btn-neutral" title="Gitter.im"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>&copy; 2018 Michael Fudge</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../gitter/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../azure/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../js/readthedocs.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
