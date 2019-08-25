@@ -7,9 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="../../../favicon.ico">
-  
-  <title>Azure - IST256</title>
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Azure Setup - IST256</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -19,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Azure";
+    var mkdocs_page_name = "Azure Setup";
     var mkdocs_page_input_path = "content\\setup\\azure.md";
     var mkdocs_page_url = null;
   </script>
@@ -92,6 +91,10 @@
                     
     <a class="" href="../../walkthrough/">Programming Walkthrough</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../../../watch/">Videos</a>
+                </li>
     </ul>
 	    </li>
           
@@ -105,23 +108,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../osx/">Mac OSX</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../win/">Windows</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../su-google/">SU Google Apps</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../github/">Github</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../gitter/">Gitter.im</a>
                 </li>
                 <li class="">
                     
@@ -129,44 +116,29 @@
                 </li>
                 <li class=" current">
                     
-    <a class="current" href="./">Azure</a>
+    <a class="current" href="./">Azure Setup</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#software-install-instructions-for-azure-notebooks">Software Install Instructions for Azure Notebooks</a></li>
-    
-
-    <li class="toctree-l3"><a href="#do-not-follow-these-instructions-unless-you-have-been-instructed-to-do-so">Do Not Follow These Instructions Unless You Have Been Instructed To Do So.</a></li>
-    
-
-    <li class="toctree-l3"><a href="#if-you-have-installed-on-windows-or-osx-you-do-not-require-the-azure-setup">If You Have Installed on Windows or OSX You Do Not Require the Azure Setup</a></li>
+    <li class="toctree-l3"><a href="#azure-notebooks-setup">Azure Notebooks Setup</a></li>
     
         <ul>
         
             <li><a class="toctree-l4" href="#setup-procedure">Setup Procedure</a></li>
+        
+            <li><a class="toctree-l4" href="#for-the-next-step">For the Next Step</a></li>
         
         </ul>
     
 
     </ul>
                 </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Information</span>
-    <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../../faq/">FAQ</a>
+    <a class="" href="../azure-config/">Azure Config</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../discuss/">Gitter.im</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../../watch/">Videos</a>
+    <a class="" href="../commit-code-git/">Git Commands</a>
                 </li>
     </ul>
 	    </li>
@@ -197,7 +169,7 @@
         
       
     
-    <li>Azure</li>
+    <li>Azure Setup</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -207,64 +179,26 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="software-install-instructions-for-azure-notebooks">Software Install Instructions for Azure Notebooks <i class="fa fa-cloud"></i></h1>
+                <h1 id="azure-notebooks-setup">Azure Notebooks Setup</h1>
 <p>You can run everything we use in this course through the free Microsoft Azure Notebooks Service. This service hosts Python, Jupyter and git in the cloud so that you can run your code from any web browser.</p>
-<h1 id="do-not-follow-these-instructions-unless-you-have-been-instructed-to-do-so">Do Not Follow These Instructions Unless You Have Been Instructed To Do So.</h1>
-<h1 id="if-you-have-installed-on-windows-or-osx-you-do-not-require-the-azure-setup">If You Have Installed on Windows or OSX You Do Not Require the Azure Setup</h1>
 <h2 id="setup-procedure">Setup Procedure</h2>
-<h3 id="step-1-create-your-azure-notebook-library">Step 1 : Create Your Azure Notebook Library</h3>
 <ol>
 <li>Go to the website <a href="https://notebooks.azure.com/">https://notebooks.azure.com/</a>. Click <strong>sign in</strong> to login in.</li>
 <li>Login with email <strong>netid@syr.edu</strong>. Where <strong>netid</strong> is your netid, of course!</li>
-<li>Enter your <em>netid</em> password for the password. </li>
+<li>Enter your <em>netid</em> password for the password. Syracuse University has a connection to Azure which is why your password will work here.</li>
 <li>After you are logged in, click on <strong>Libraries</strong> to take you to the libraries section of Azure Notebooks.</li>
 <li>Click on <strong>+ New Library</strong> to create your library for this course.</li>
 <li>For the <strong>Library Name</strong> enter <strong>IST256</strong> for the <strong>Library ID</strong> enter <strong>IST256</strong></li>
-<li>Un-check the <strong>Public library</strong> and <strong>Create a README.md</strong> checkboxes.<br />
+<li>Un-check the <strong>Public library</strong> and Un-Check <strong>Create a README.md</strong> checkboxes.<br />
 <img alt="New Library" src="../../images/azure-new-library.png" /> </li>
 <li>When you are ready, click <strong>Create</strong></li>
 </ol>
-<h3 id="step-2-open-the-terminal-window-in-azure-notebooks">Step 2 : Open the terminal window in Azure notebooks</h3>
-<ol>
-<li>When your library is created, click on the <strong>IST256</strong> library and click <strong>Terminal</strong> to launch the terminal. When the terminal launches you should see a command line with the prompt <code>nbuser@nbserver:~$</code> </li>
-<li>Switch the current working directory to the <code>library</code> folder by typing <code>cd ~/library</code> and pressing ENTER/RETURN. Your command prompt should now read <code>nbuser@nbserver:~/library$</code></li>
-</ol>
-<h3 id="step-3-get-access-to-our-github-classroom-repository">Step 3: Get access to our Github Classroom repository</h3>
-<ol>
-<li>Go to the <a href="https://github.com/">https://github.com/</a> website and sign in with your GitHub with the account and password.</li>
-<li>Click on this GitHub Classroom invite link here: <a href="https://classroom.github.com/a/QqTUu4OC">https://classroom.github.com/a/QqTUu4OC</a></li>
-<li>A Page will ask you to accept the assignment. <br/ >
- <img alt="images/github-classroom-accept.png" src="../../images/github-classroom-accept.png" /> <br />
- The part highlighted in yellow will match your GitHub username. <br />
- Click <strong>Accept this assignment</strong></li>
-<li>You might be asked to accept some permissions. Make sure to accept them. After that you will then see this confirmation screen.<br />
-<img alt="images/github-classroom-done.png" src="../../images/github-classroom-done.png" /></li>
-<li>Click the link at the bottom of the message to go to your repository page. (The link following the text <strong>Your assignment has been created here:</strong>)</li>
-<li>Your repository page will look like this: <br />
-<img alt="images/repository-page.png" src="../../images/repository-page.png" /> <br />
-As usual, the highlighted portions should match your GitHub username.</li>
-<li>From the repository page (where you left off), click on the clone or download button: <br />
-<img alt="images/clone-or-download.png" src="../../images/clone-or-download.png" /> </li>
-<li>Copy the link under <strong>Clone with HTTPS</strong>. </li>
-</ol>
-<h3 id="step-4-configure-git-in-the-azure-notebooks-terminal-window">Step 4 : Configure git in the Azure notebooks terminal window</h3>
-<p>From the Azure notebooks terminal window with command prompt  <code>nbuser@nbserver:~/library$</code> do the following:</p>
-<ol>
-<li>type <code>git clone</code> then paste in your close repository from the previous step. For example mine was <code>https://github.com/IST256-classroom/learn-python-spring-2018-mafudge</code> This will start the cloning process which will take about 1 minute.</li>
-<li>type <code>git config credential.helper store</code> to configure git to save passwords.</li>
-<li>type <code>git config --global user.email "netid@syr.edu"</code> to configure git to use your email. MAKE SURE TO USE YOUR NETID!!!</li>
-<li>type <code>git config --global user.name "Your Name"</code> to configure git commits with your name.  AGAIN USE YOUR NAME HERE.</li>
-</ol>
-<h3 id="step-5-install-python-modules">Step 5: Install Python modules</h3>
-<p>Next we will install the common Python components we will use in this course. This will save you a lot of time and headaches later on!</p>
-<p>From the Azure notebooks terminal window with command prompt  <code>nbuser@nbserver:~/library$</code> do the following:
-.<br />
-3. First we install  modules we will use in this course. Type: <br />
-<code>pip install --user --upgrade geocoder lxml terminado numpy scipy requests</code><br />
-Again, this might take a few minutes, so be patient.
-4. Finally, we install the last round of Python modules we will use in this course. Type: <br />
-<code>pip install --user --uprgade pandas matplotlib plotly cufflinks folium bs4</code> <br />
-And as usual it will take some time to install these modules.</p>
+<h2 id="for-the-next-step">For the Next Step</h2>
+<ul>
+<li>Stay logged into azure notebooks.</li>
+<li>Copy your Github repository Url</li>
+<li>Have your Github username and password ready.</li>
+</ul>
               
             </div>
           </div>
@@ -272,7 +206,7 @@ And as usual it will take some time to install these modules.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../../faq/" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../azure-config/" class="btn btn-neutral float-right" title="Azure Config">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../github-classroom/" class="btn btn-neutral" title="Github Classroom"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -306,7 +240,7 @@ And as usual it will take some time to install these modules.</p>
         <span><a href="../github-classroom/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../../faq/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../azure-config/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Setup Your Gitter.im Account - IST256</title>
+  <title>Git Commands - IST256</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Setup Your Gitter.im Account";
-    var mkdocs_page_input_path = "content\\setup\\gitter.md";
+    var mkdocs_page_name = "Git Commands";
+    var mkdocs_page_input_path = "content\\setup\\commit-code-git.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -122,9 +122,23 @@
                     
     <a class="" href="../azure-config/">Azure Config</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../commit-code-git/">Git Commands</a>
+    <a class="current" href="./">Git Commands</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#commit-your-code-from-the-command-line-with-git">Commit Your Code From the Command Line with Git</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#procedure">Procedure</a></li>
+        
+            <li><a class="toctree-l4" href="#summary-of-git-commands">Summary of Git  Commands</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -150,8 +164,12 @@
     <li><a href="../../..">Docs</a> &raquo;</li>
     
       
+        
+          <li>Course Setup &raquo;</li>
+        
+      
     
-    <li>Setup Your Gitter.im Account</li>
+    <li>Git Commands</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -161,25 +179,51 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="setup-your-gitterim-account">Setup Your Gitter.im Account</h1>
-<p>Gitter.im is a chat service where programmers go to talk about their code projects. In this course we will use Gitter.im to discuss the course and ask questions about Python code. We want to break down the traditional teacher-student exchange and create a community where both teachers and students ask and answer questions. We will encourage you to contact us via Gitter instead of using traditional tools like email.</p>
-<h2 id="before-you-begin">Before You Begin</h2>
-<ul>
-<li>To sign up for gitter.im, you need a Github account. Make sure your have one before you begin.</li>
-</ul>
-<h2 id="setup-procedure">Setup Procedure</h2>
+                <h1 id="commit-your-code-from-the-command-line-with-git">Commit Your Code From the Command Line with Git</h1>
+<p>This article outlines how to commit your code to git and push it to GitHub. The process is quite simple and you should get in the habit of doing it whenever you are done coding for the day. </p>
+<h2 id="procedure">Procedure</h2>
 <ol>
-<li>Go to <a href="https://gitter.im/">https://gitter.im/</a></li>
-<li>Click The <strong>Sign in to start talking</strong> button in the upper right.</li>
-<li>Click the <strong>Sign in with Github</strong> button </li>
-<li>Search for our channel <strong>IST256/Fudge</strong></li>
-<li>Click <strong>Join Room</strong> </li>
-<li>Install the Gitter.im version for your iPhone and Android phone from the App Store. </li>
+<li>Log on to Azure Notebooks: <a href="https://notebooks.azure.com">https://notebooks.azure.com</a> with your SU email and NetID password.</li>
+<li>Select the <strong>IST256</strong> project from the <em>My Projects</em> workspace. </li>
+<li>Click the <strong>Terminal</strong> icon to launch the terminal.<br />
+When the terminal launches you should see a command line with the prompt <code>nbuser@nbserver:~$</code> </li>
+<li>Switch the current working directory to the <code>library</code> folder by typing: <br />
+<code>cd ~/library</code> </li>
+<li>Your command prompt should now read: <code>nbuser@nbserver:~/library$</code><br />
+Next you need to switch into the local copy of your Git reposiotry folder. This will likely begin with the year and semester you&rsquo;re taking the course e.g. <code>2019-fall-learn-python-mafudge-su</code>. For example, I would type: <code>cd 2019-fall-learn-python-mafudge-su</code>. The easiest way to find your folder is to type: <code>cd</code> then type the year you&rsquo;re taking the course, then press the TAB key and the teriminal will complete the rest for you!</li>
+<li>From the <code>nbuser@nbserver:~/library/your-repository-folder$</code> prompt, you can verify you are in the right place by typing:<br />
+<code>git status</code><br />
+If somewhere in the output, it says <code>fatal: not a git repository</code> then you are not in the right place!<br />
+If somewhere in the output it says  <code>on branch master</code> then you are in your git repository folder.</li>
+<li>To track the changes you&rsquo;ve made to the files type:<br />
+<code>git add --all</code>.  </li>
+<li>To commit a save point to git of your work, type:<br />
+<code>git commit -m "message"</code> where <code>message</code> is your commit message. It should reflect the type of work you did this session, like <code>completed lab 3</code> or <code>finished NYC 3.4</code> for example.</li>
+<li>To send your changes to GitHub, type:<br />
+<code>git push origin master</code> </li>
 </ol>
+<h2 id="summary-of-git-commands">Summary of Git  Commands</h2>
+<ul>
+<li><code>git status</code><br />
+Checks if you are in the right place and, of course gets the status of the files in your git repository folder. When in doubt, type this command and read the output. It will suggest what to do next!</li>
+<li><code>git add --all</code><br />
+Tracks all the changes you made so they can be commited.</li>
+<li><code>git commit -m "message</code><br />
+Commits the tracked changes under message <code>message</code>. It is important to choose a good commit message that reflects the work you&rsquo;ve done. The messages show up in Github.</li>
+<li><code>git push origin master</code><br />
+Sends your commits to GitHub.</li>
+</ul>
               
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../azure-config/" class="btn btn-neutral" title="Azure Config"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -204,6 +248,8 @@
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
+      
+        <span><a href="../azure-config/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

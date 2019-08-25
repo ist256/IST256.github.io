@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="../../favicon.ico">
-  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>Programming Walkthrough - IST256</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
@@ -103,12 +102,14 @@
         
             <li><a class="toctree-l4" href="#part-3-on-your-own-h01">Part 3: On Your Own [H01]</a></li>
         
-            <li><a class="toctree-l4" href="#summary">Summary</a></li>
-        
         </ul>
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../watch/">Videos</a>
                 </li>
     </ul>
 	    </li>
@@ -123,23 +124,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../setup/osx/">Mac OSX</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../setup/win/">Windows</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../setup/su-google/">SU Google Apps</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../setup/github/">Github</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../setup/gitter/">Gitter.im</a>
                 </li>
                 <li class="">
                     
@@ -147,26 +132,15 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../setup/azure/">Azure</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Information</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../faq/">FAQ</a>
+    <a class="" href="../setup/azure/">Azure Setup</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../discuss/">Gitter.im</a>
+    <a class="" href="../setup/azure-config/">Azure Config</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../watch/">Videos</a>
+    <a class="" href="../setup/commit-code-git/">Git Commands</a>
                 </li>
     </ul>
 	    </li>
@@ -208,7 +182,7 @@
             <div class="section">
               
                 <h1 id="programming-walk-through">Programming Walk-Through</h1>
-<p>There are activities in this walk-through which count towards your L01 and H01 grades this week, so pay very close attention!</p>
+<p>There are activities in this walk-through which count towards your L01 (Lab) and H01 (Homework) grades this week, so pay very close attention!</p>
 <h2 id="part-1-overview">Part 1: Overview</h2>
 <h3 id="becoming-a-modern-programmer">Becoming a Modern programmer</h3>
 <p>Programming is more than just writing code and solving problems. Modern programming is a collaborative activity. For instance, so <a href="https://github.com/torvalds/linux">many people contribute code to the Linux kernel, the number of contributors is too high to count</a>! This is why one of the learning objectives of this course is to:</p>
@@ -244,56 +218,22 @@
 <p>In this part we will guide you through the programming process step-by-step. When you are finished with the process you will have completed your first lab, L01, and handed it in to Github for a grade!</p>
 <p>In this walk-through we will simulate your typical workflow when working on labs, recitations, or homework assignments in this course. Specifically we will:</p>
 <ol>
-<li>Open the command line in our <strong>Learn-Python</strong> git repository</li>
 <li>Open, Edit, and Execute a Python program using <strong>Jupyter Notebook</strong></li>
+<li>Open the command line in our <strong>Learn-Python</strong> git repository</li>
 <li>Save our code changes to <strong>git</strong>, then push them to <strong>GitHub</strong></li>
 <li>View our saved code locally and on the <strong>GitHub</strong> website.</li>
 </ol>
-<h3 id="step-21-opening-the-command-line-in-your-learn-python-git-repository">Step 2.1: Opening the command line in your Learn-Python git repository.</h3>
-<p>If you followed the <a href="../setup/overview/">course setup checklist</a>, you will have cloned your <strong>Learn-Python</strong> git repository from GitHub to the <strong>Documents</strong> folder on your computer. </p>
-<p>Before you start ANY coding activity, whether its a Coding Lab, Recitation, Homework, or one of the examples during lecture, first you&rsquo;ll need to <strong>open the command line</strong> from inside the repository. </p>
-<p><strong>YOU NEED TO KNOW HOW TO DO THIS IN YOUR SLEEP WITH HANDS TIED BEHIND YOUR BACK.</strong></p>
-<p>There&rsquo;s excellent instructions for how to do this on our course FAQ: <a href="/faq/#how-do-i-open-a-command-line">How do I open the command line in my Learn-Python git repository folder?</a> as well as some videos for <a href="https://youtu.be/4NmcFGngyh0">Mac OSX</a> and <a href="https://youtu.be/Ze9EmjjHoxU">Windows</a>.</p>
+<h3 id="step-21-open-edit-and-execute-a-python-program-using-jupyter-notebook">Step 2.1: Open, Edit, and Execute a Python program using <strong>Jupyter Notebook</strong></h3>
+<p>The primary tool we will use to program in Python is called <strong><a href="http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html">Jupyter Notebook</a></strong>. This is the preferred development environment of Scientists, Data Analysts, and of course Data Scientists. The notebook environment is beneficial to these disciplines because you can combine instructions with code and intermix visualizations such as tables, map and graphs. Jupyter runs as a mini web server within the Azure Notebooks environment thus all you&rsquo;ll need to write and run your code is a web browser.</p>
 <ol>
-<li>
-<p>Follow them at this time and don&rsquo;t continue until you have completed the steps and you&rsquo;re at the command line:<br>
-<strong><i class="fa fa-windows"></i> On Windows</strong> <br />
-<img alt="windows command prompt" src="/images/win-command-prompt.png" /><br>
-<strong><i class="fa fa-apple"></i> On OSX</strong> <br />
-<img alt="owx terminal" src="/images/mac-terminal-window.png" /></p>
-</li>
-<li>
-<p>You can verify you&rsquo;re in the right place by typing the following at the command prompt: <br>
-<code>git status</code> <br> 
-This tells you the status of your repository. The output should look similar to this: <br>
-<img alt="git status" src="../images/wt-git-status.png" /> <br>
-If it says <strong>Not a git repository</strong> then you&rsquo;re not in the correct folder! <br>
-<code>git status</code> is your friend. It tells you 3 important things:</p>
-<ul>
-<li><strong>On branch master</strong> tells you this folder is a git repository and you&rsquo;re on the <strong>master</strong> branch. Git allows us to branch our code by name and go off on programming &ldquo;tangents&rdquo;. Right now we&rsquo;ll live in a single branch, <strong>master</strong>.</li>
-<li><strong>Your branch is up-to-date with &lsquo;origin/master&rsquo;</strong> lets you know that the code on your computer matches the code on GitHub.</li>
-<li><strong>nothing to commit, working tree clean</strong> informs you that you&rsquo;ve made no changes to the code on your computer. </li>
-</ul>
-</li>
-<li>
-<p>Install <code>matplotlib</code> you will need Python&rsquo;s <strong>matplotlib</strong> package for this walkthrough. You can install it from the command line by typing: <code>pip install matplotlib</code></p>
-</li>
-</ol>
-<h3 id="step-22-open-edit-and-execute-a-python-program-using-jupyter-notebook">Step 2.2: Open, Edit, and Execute a Python program using <strong>Jupyter Notebook</strong></h3>
-<p>One of the tools we will use to program in Python is called <strong><a href="http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html">Jupyter Notebook</a></strong>. This is the preferred development environment of Scientists, Data Analysts, and of course Data Scientists. The notebook environment is beneficial to these disciplines because you can combine instructions with code and intermix visualizations such as tables, map and graphs. Jupyter runs as a mini web server on your computer and therefore to view, execute and edit your code you&rsquo;ll need to use a web browser. </p>
-<ol>
-<li>Let&rsquo;s start the Jupyter Notebook service. At your command prompt, type: <br>
-<code>jupyter-notebook</code> <br>
-After you type this command, you&rsquo;ll see  messages on the console, similar to this: <br>
-<img alt="jupyter notebook" src="../images/jupyter-notebook.png" /> <br>
-The last two messages are the most important. The second to last line tells you the notebook is running and provides the website for you (in this case it&rsquo;s <strong>http://localhost:8888</strong>) The last line provides instructions for shutting down the notebook. </li>
-<li>Jupyter Notebook will automatically open up in your default browser. <br>
-<img alt="jupyter notebook browser" src="../images/jupyter-notebook-browser.png" /> <br>
-We <strong>strongly recommend</strong> using <a href="https://www.google.com/chrome/">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/products/">Firefox</a> as your computer&rsquo;s default web browser in place of <i class="fa fa-windows"></i> Edge (Internet Explorer) or <i class="fa fa-apple"></i> Safari. </li>
+<li>Log on to Azure Notebooks: <a href="https://notebooks.azure.com">https://notebooks.azure.com</a> with your SU email and NetID password. </li>
+<li>From the Azure Notebooks home page select the <strong>IST256</strong> project.</li>
+<li>From the IST256 project page, click the run button (It will probably say &ldquo;Run on free Compute&rdquo;). This will launch the Jupyter Notebooks environment. You can tell the environment has launched as you will see &ldquo;Powered by jupyter&rdquo; at the top of the page.</li>
 <li>Next, we have to navigate to our code. We&rsquo;re in Lesson 01, so we have to find that folder:<ol>
-<li>Double-click on the <strong>content</strong> folder.</li>
-<li>Double-click on the <strong>lessons</strong> folder.</li>
-<li>Double-click on the <strong>01</strong> folder.</li>
+<li>Click on your Git repository folder.</li>
+<li>Click on the <strong>content</strong> folder.</li>
+<li>Click on the <strong>lessons</strong> folder.</li>
+<li>Click on the <strong>01</strong> folder.</li>
 </ol>
 </li>
 <li>You should now see the folders pertinent to this lesson: <br>
@@ -326,7 +266,7 @@ The modal behavior of the Jupyter notebook is a little tricky at first but very 
 <strong>PRO TIP:</strong> Need a list of commands? Open the command pallette <img alt="command pallette" src="../images/command-pallette.png" /> from the toolbar. It lists all the available commands! What key do you press to save the notebook? Press it now!</li>
 </ul>
 </li>
-<li>Next, Let&rsquo;paste in some sample code which really shows off the power of Jupyter notebook. This code, taken from <a href="http://matplotlib.org/1.4.1/examples/pie_and_polar_charts/polar_bar_demo.html">http://matplotlib.org/1.4.1/examples/pie_and_polar_charts/polar_bar_demo.html</a> will generate a polar chart of random data. Copy and paste the following code into the cell beneath your <strong>Hello, Python!</strong> program:</li>
+<li>Next, Let&rsquo;s paste in some sample code which really shows off the power of Jupyter notebook. This code, taken from <a href="http://matplotlib.org/1.4.1/examples/pie_and_polar_charts/polar_bar_demo.html">http://matplotlib.org/1.4.1/examples/pie_and_polar_charts/polar_bar_demo.html</a> will generate a polar chart of random data. Copy and paste the following code into the cell beneath your <strong>Hello, Python!</strong> program:</li>
 </ol>
 <pre><code>%matplotlib inline
 import numpy as np
@@ -358,92 +298,82 @@ plt.show()
 <p>We gave you a screen shot of the code this time to force you to type it in! Practice makes perfect!</p>
 <p>If the code executes correctly, you should see the message <strong>This is Working</strong> in the program output. <strong>Working</strong> will be colored green, like this:</p>
 <p><img alt="Install Worked" src="../images/install-worked.png" /></p>
-<p><strong>HELP I GOT ERRORS!!!</strong>  If you get an <code>ImportError</code> then you will need to go to your command line and type <code>pip install</code> to add the  missing Python packages to your computer&rsquo;s Python setup. For example if you get an <code>ImportError matplotlib</code> then you need to open the command line and type <code>pip install matplotlib</code> then re-execute this cell in Jupyter Notebook. Repeat this process until it runs without error&hellip; then you know everything is installed and working! For any other errors beyond <code>ImportError</code> check your typing to make sure it&rsquo;s accurate! </p>
-<h4 id="exiting-jupyter-notebook">Exiting Jupyter Notebook</h4>
-<p>We&rsquo;re done with Jupyter, so how do we save and close out?</p>
+<p><strong>HELP I GOT ERRORS!!!</strong>  If you get an <code>ImportError</code> then you will need to go to another cell and import the missing module. For example, if you are missing <code>matplotlib</code> in the cell you would type:<br />
+<code>!pip3 install --user matplotlib</code> to add the missing bits to Python. Yes there&rsquo;s a <code>!</code> character in frot of the command. This instructs Jupyter notebook to drop down to the command line.</p>
+<h4 id="exiting-your-jupyter-notebook-file">Exiting Your Jupyter Notebook File</h4>
+<p>So you are done with your Jupyter notebook file, so how do we save and close out?</p>
 <ol>
 <li>Save your work. Enter command mode and press <code>s</code> to save.</li>
 <li>Exit the notebook page. From the Jupyter menu select <strong>File</strong> then <strong>Close and Halt</strong>: <br>
- <img alt="jupyter close and halt" src="../images/jupyter-close-and-halt.png" /><br />
-<strong>NOTE:</strong> It is important to exit the notebook this way or else it will continue to execute in the background. </li>
-<li>Close the browser window.</li>
-<li>Back in the command prompt window, press <strong>CTRL+C</strong> TWO TIMES to Halt Jupyter Notebook.</li>
-<li>You are now back at the command prompt.</li>
+ <img alt="jupyter close and halt" src="../images/jupyter-close-and-halt.png" />  </li>
+</ol>
+<p><strong>NOTE:</strong> It is important to exit the notebook file this way or else it will continue to run in the background.  This will slow down other notebooks you attempt to run!</p>
+<h3 id="step-22-opening-the-command-line-in-your-learn-python-git-repository">Step 2.2: Opening the command line in your Learn-Python git repository.</h3>
+<p>You will need to commit your code changes and send them to GitHub for grading. In order to do this, you must open up the command line (linux terminal) in your git repository folder.</p>
+<p><strong>YOU NEED TO KNOW HOW TO DO THIS IN YOUR SLEEP WITH HANDS TIED BEHIND YOUR BACK.</strong></p>
+<ol>
+<li>From the Azure Notebook homepage <a href="https://notebooks.azure.com">https://notebooks.azure.com</a>, select the <strong>IST256</strong> project from the <em>My Projects</em> workspace. </li>
+<li>Click the <strong>Terminal</strong> icon to launch the terminal. This will give you access to the command line.<br />
+When the terminal launches you should see a command line with the prompt <code>nbuser@nbserver:~$</code> </li>
+<li>Switch the current working directory to the <code>library</code> folder by typing: <br />
+<code>cd ~/library</code> </li>
+<li>Your command prompt should now read: <code>nbuser@nbserver:~/library$</code><br />
+Next you need to switch into the local copy of your Git reposiotry folder. This will likely begin with the year and semester you&rsquo;re taking the course e.g. <code>2019-fall-learn-python-mafudge-su</code>. For example, I would type: <code>cd 2019-fall-learn-python-mafudge-su</code>. The easiest way to find your folder is to type: <code>cd</code> then type the year you&rsquo;re taking the course, then press the TAB key and the teriminal will complete the rest for you!</li>
+<li>Verify you are in the correct folder by typing:<br />
+<code>git status</code><br />
+  * If you are in the correct folder, you should see <code>on branch master</code> in the first part of the command output.<br />
+  * If you are NOT in the correct folder, you will see <code>fatal: not a git repository</code> in the first part of the command output.</li>
 </ol>
 <h3 id="step-23-save-our-code-changes-to-git-then-push-them-to-github">Step 2.3: Save our code changes to <strong>git</strong>, then push them to <strong>GitHub</strong></h3>
-<p>During this walk-through we&rsquo;ve made changes to the file: <strong>CCL-1st.ipynb</strong>. Those files are saved on our computer, but how do we record the changes we&rsquo;ve made using <strong>git</strong> and then push those changes up to the GitHub website? We&rsquo;ll walk-through this process next.</p>
+<p>During this walk-through we&rsquo;ve made changes to the file: <strong>CCL-walkthrough.ipynb</strong>. Those changes are saved in Azure Notebooks, but how do we share them with our Professor? We&rsquo;ll walk-through this process next.</p>
 <ol>
+<li>From the terminal you opened in the previous step: </li>
 <li>We&rsquo;ve made some changes, let&rsquo;s see what <strong>git</strong> has to say about them. <br>
 Type: <code>git status</code> <br>
 to check the state of our repository. The output should look something like this:<br>
 <img alt="new git status" src="../images/new-git-status.png" /> <br>
-Git tells us we have changes which are <strong>not staged for commit</strong>. This means we&rsquo;ve made changes and git doesn&rsquo;t know about them yet. </li>
-<li>You must tell git which changes to files you want to commit. This is called <em>staging</em> the commit. <br> 
-Let&rsquo;s tell git to stage <em>all</em> the changed files in the repository folder. <br>
-Type: <code>git add --all</code> <br>
-99% of the time this is what we want. <br>
-<strong>NOTE:</strong> After you stage the files for commit, you might see some warning message, especially on Windows, about CRLF. This has to do with how the Windows platforms handle end-of-line characters in text in contrast to other platforms, like OSX or Linux. These can be ignored as git safely handles this for you. </li>
-<li>Let&rsquo;s check the status of the repository now that we&rsquo;ve staged our files. <br>
-Type: <code>git status</code> <br> 
-again to see what&rsquo;s happening in our repository.<br>
-<img alt="git status modified" src="../images/git-status-modified.png" /> <br>
-Now git tells us the two files we&rsquo;ve changed are now ready <strong>to be committed</strong>.</li>
-<li>Let&rsquo;s commit the changes to git. What does this mean exactly? <br>
+Git tells us we have changes which are <strong>not staged for commit</strong>. This means we&rsquo;ve made changes and git doesn&rsquo;t know about them yet.</li>
+<li>You must tell git which changes to files you want to commit. This is called <em>staging</em> the commit.<br />
+Let&rsquo;s tell git to stage <em>all</em> the changed files in the repository folder.<br />
+Type: <code>git add --all</code><br />
+99% of the time this is what we want.  </li>
+<li>Let&rsquo;s check the status of the repository now that we&rsquo;ve staged our files.<br />
+Type: <code>git status</code><br />
+again to see what&rsquo;s happening in our repository.<br />
+<img alt="git status modified" src="../images/git-status-modified.png" /><br />
+Now git tells us the files we&rsquo;ve changed are now ready <strong>to be committed</strong>.</li>
+<li>Let&rsquo;s commit the changes to git. What does this mean exactly?<br />
 <strong>Git Commit Explained:</strong> When you commit files, you&rsquo;re saving the <em>history</em> of them to git repository. It&rsquo;s like taking a snapshot of your repository folders&rsquo; contents at that point in time. Because you have this snapshot you are able to revert the files back to this point whenever you desire. As you can imagine, this is an extremely useful feature for programming teams who are making changes (good <em>and</em> bad) to their code. Think of the commit as an insurance policy: You <em>hope</em> you never need to use it, but it&rsquo;s there for you <em>just in case you do</em>! Whenever we commit we should should add a message: something to remind us of the changes we&rsquo;ve made. This is helpful in the event you need to cash in on that insurance policy! <br>
-Enough talk. Time to commit our changes. <br>
-Type: <code>git commit -m "Completed programming walk through lab"</code> <br> 
-<strong>NOTE:</strong> The <code>-m</code> represents the message part of the commit. <br>
+Enough talk. Time to commit our changes. <br />
+Type: <code>git commit -m "Completed programming walk through lab"</code> <br />
+<strong>NOTE:</strong> The <code>-m</code> represents the message part of the commit.<br />
 <img alt="git commit" src="../images/git-commit.png" /> <br>
 The output says there we 1 files changed, and 56 insertions, meaning we added 56 lines of code since the last commit. Yes, git makes managing your team easy because it tracks not only <em>who worked on what</em> but also <em>quantifies their contributions</em>.  Your information may vary slightly, of course.</li>
-<li>Let&rsquo;s check the status of the repository files now. <br>
-Type: <code>git status</code> <br>
-<img alt="git status committed" src="../images/git-status-committed.png" /> <br>
+<li>Let&rsquo;s check the status of the repository files now.<br />
+Type: <code>git status</code><br />
+<img alt="git status committed" src="../images/git-status-committed.png" /> <br />
 Now our local branch is <strong>ahead of &lsquo;origin/master&rsquo; by 1 commit.</strong> This tells us our local git repository is <em>newer</em> than our remote copy on GitHub. We also have <strong>nothing to commit</strong> meaning our files are in sync with our local copy of git. This makes sense: we just committed!</li>
-<li>The last step in the process is to get our local copy of git, up on GitHub. Before we do that let&rsquo;s explain the process. <br>
+<li>The last step in the process is to sync up our local copy of git commits with on GitHub. Before we do that let&rsquo;s explain the process.<br />
 The status message says <strong>Your branch is ahead of &lsquo;origin/master&rsquo; by 1 commit</strong>. What exactly does this mean? Well, when we initially <strong>cloned</strong> the repository off GitHub, it made two versions of the repository. One is still on GitHub (git calls this one <strong>&lsquo;origin/master&rsquo;</strong>) the other is on your computer. When the two repositories get out-of-sync, we can reconcile them in two ways:<ul>
 <li>When the the local branch is <strong>ahead of &lsquo;origin/master&rsquo;</strong> we need to execute a <strong>push</strong> to synchronize the two repositories, re-playing the local commits remotely on GitHub.</li>
 <li>When the the local branch is <strong>behind &lsquo;origin/master&rsquo;</strong> we need to execute a <strong>pull</strong> to synchronize the two repositories, re-playing the commits on GitHub in our local repository. </li>
 </ul>
 </li>
-<li>Since we&rsquo;re <strong>ahead</strong> we should <strong>push</strong>. <br>
-Type: <code>git push origin master</code> <br>
-You should see output similar to the following: (again your message might be different depending on what was changed) <br>
+<li>Since we&rsquo;re <strong>ahead</strong> we should <strong>push</strong>.<br />
+Type: <code>git push origin master</code><br />
+You should see output similar to the following: (again your message might be different depending on what was changed)<br />
 <img alt="git push origin master" src="../images/git-push-origin-master.png" /></li>
-<li>An one final check of the repository status: <br>
-Type: <code>git status</code> <br>
-<img alt="git status" src="../images/wt-git-status.png" /> <br>
-Which is the same status from the beginning of the walk-through! It tells us nothing had changed locally and we&rsquo;re in sync with GitHub.</li>
+<li>An one final check of the repository status:<br />
+Type: <code>git status</code> <br />
+<img alt="git status" src="../images/wt-git-status.png" /><br />
+Which is the same status from the beginning of the walk-through! It tells us nothing has changed locally and what we have here is now in sync with GitHub.</li>
 </ol>
-<p><strong>IMPORTANT: You&rsquo;ll execute step 2.3 <em>every time you code</em>.</strong> <br>
-The commands are summarized here <a href="/faq/#how-do-i-save-my-changes-to-github">IST256 FAQ: How do I save my changes to GitHub?</a></p>
-<p>You should get in the habit of following this procedure after each coding session. Class is over? commit code and push to GitHub. Work on your homework for an hour? commit your code and push to GitHub. Not only will it record your changes for you in the event you need to &ldquo;undo&rdquo; a change, but it also &ldquo;backs up&rdquo; your work to the cloud in the event that your computer has a problem or becomes lost / broken! It&rsquo;s great insurance against disasters and its <em>so, so easy to do</em>.</p>
-<h3 id="step-4-visualizing-your-commits-locally-and-on-github">Step 4: Visualizing your commits, locally and on GitHub</h3>
+<p><strong>IMPORTANT: You&rsquo;ll execute step 2.3 <em>every time you code</em>.</strong>  </p>
+<p>You should get in the habit of following this procedure after each coding session. Class is over? commit code and push to GitHub. Work on your homework for an hour? commit your code and push to GitHub. Not only will it record your changes for you in the event you need to <em>undo a change</em>, but it also <em>backs up your work</em> to the cloud in the event that work has a problem or becomes lost / broken! It&rsquo;s great insurance against disasters and its <em>so, so easy to do</em>. You can push the same assignment multiple times. We professors will always look as the latest version!</p>
+<h3 id="step-24-visualizing-your-commits-on-github">Step 2.4: Visualizing your commits on GitHub</h3>
 <p>Once you get rolling with a few commits it might be useful to look back at the history of changes you&rsquo;ve made. Let&rsquo;s demonstrate that locally and on GitHub.</p>
-<h4 id="viewing-your-commits-locally">Viewing your commits locally.</h4>
-<p>To view your git commits locally, <br>
-Type <code>gitk</code> <br>
-This brings up a GUI window where you can easily view the commits. <br>
-<img alt="gitk" src="../images/gitk.png" /> <br></p>
-<p>The top section of <strong>gitk</strong> has 3 cells where you can select a particular commit to view.</p>
-<ul>
-<li>In the first cell, you can select it by commit message.</li>
-<li>In the second cell you can select the commit by author (Who made the commit).</li>
-<li>In the third cell you can select the commit by date and time. <strong>IMPORTANT:</strong> we use this to ensure you&rsquo;ve completed your homework on time!</li>
-</ul>
-<p>The bottom section of *<em>gitk</em> has 2 cells:</p>
-<ul>
-<li>the right cell let&rsquo;s you select the file changed as part of the commit.</li>
-<li>the left cell let&rsquo;s you see what changed in the commit<ul>
-<li>lines in <strong>red</strong> beginning with a <code>-</code> were removed</li>
-<li>lines in <strong>green</strong> beginning with a <code>+</code> were added</li>
-</ul>
-</li>
-</ul>
-<p>Close the <code>gitk</code> window.</p>
-<h3 id="viewing-your-commits-on-github">Viewing your commits on GitHub.</h3>
-<p>Likewise, you can view the commits you&rsquo;ve made locally and pushed to GitHub. </p>
 <ol>
-<li>Open your repository website on https://github.com. If you don&rsquo;t remember what it is from the command line in your local repository <br>
+<li>Open your repository website on <a href="https://github.com">https://github.com</a>. If you don&rsquo;t remember what it is from the command line in your local repository <br>
 type: <code>git remote -v</code>  <br>
 to display it.</li>
 <li>From the GitHub repository Website, select <strong>commits</strong> <br>
@@ -461,7 +391,7 @@ In this example you want to select the commit with message  <strong>Completed pr
 <p><img alt="github commit files" src="../images/github-commit-files.png" /></p>
 <h2 id="part-3-on-your-own-h01">Part 3: On Your Own [H01]</h2>
 <p>Next, we will walk you through a typical homework assignment. Since we&rsquo;ve focused on committing work to with git already, in this part we will emphasize how go about completing homework. </p>
-<p>Similar to the labs, the homeworks are in jupyter notebook.</p>
+<p>Similar to the labs, the homework assignments can be found in your git repository folder and you code the solution in Jupyter notebook.</p>
 <h3 id="getting-started">Getting Started</h3>
 <ol>
 <li>Open the following file in Jupyter Notebook: <strong>lessons/01/Now-You-Code/NYC1-walkthrough.ipynb</strong></li>
@@ -521,14 +451,8 @@ print(&quot;Each person should contribute&quot;, contribution, &quot;dollars.&qu
 <img alt="Problem Analysis" src="../images/NYC1-code-github.png" />  </li>
 </ol>
 <p>At this point your homework has been turned in, and your professor should be able to grade it and determine whether you completed it on time, by checking the timestamp of your commit.</p>
-<h2 id="summary">Summary</h2>
-<p>We hope this walk-through clarified the programming tools we will use throughout the course. Below are a some tips and references to the 4 tools demonstrated in this walk-through.</p>
-<h3 id="references">References</h3>
-<ul>
-<li>How to open the command line from Learn Python repository: <a href="../faq/#how-do-i-open-a-command-line">IST256 FAQ: How do I open a command line?</a></li>
-<li>Jupyter Notebook Command Cheat Sheet: <a href="https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/">https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/</a></li>
-<li>How to commit your code and push to GitHub: <a href="/faq/#how-do-i-save-my-changes-to-github">IST256 FAQ: How do I save my changes to GitHub?</a></li>
-</ul>
+<h3 id="summary">Summary</h3>
+<p>We hope this walk-through clarifies the programming tools we will use throughout the course. Below are a some tips and references to the 4 tools demonstrated in this walk-through.</p>
               
             </div>
           </div>
@@ -536,7 +460,7 @@ print(&quot;Each person should contribute&quot;, contribution, &quot;dollars.&qu
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../setup/overview/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../watch/" class="btn btn-neutral float-right" title="Videos">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../toc/" class="btn btn-neutral" title="Lessons"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -570,7 +494,7 @@ print(&quot;Each person should contribute&quot;, contribution, &quot;dollars.&qu
         <span><a href="../toc/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../setup/overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../watch/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
