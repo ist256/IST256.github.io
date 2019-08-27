@@ -197,9 +197,12 @@
 <li>Click <strong>Terminal</strong> to launch the terminal. When the terminal launches you should see a command line with the prompt <code>nbuser@nbserver:~$</code>  </li>
 <li>Switch the current working directory to the <code>library</code> folder by typing <code>cd ~/library</code> and pressing ENTER/RETURN. Your command prompt should now read <code>nbuser@nbserver:~/library$</code></li>
 <li>From the <code>nbuser@nbserver:~/library$</code> prompt, type <br />
-<code>git clone</code> then paste in your close repository from the previous step. For example mine was <code>https://github.com/IST256-classroom/learn-python-spring-2018-mafudge</code> and press ENTER/RETURN. This will start the cloning process which will take about 1 minute.</li>
-<li>More commands to type. Press ENTER/RETURN after each one: <br />
-Type <code>git config --global credential.helper store</code> to configure git to save passwords. </li>
+<code>git clone</code> then paste in your close repository from the previous step. For example mine was <code>https://github.com/IST256-classroom/learn-python-spring-2018-mafudge</code> and press ENTER/RETURN. <br />
+You will be prompted for your github username.<br />
+You wiil be prompted for your github password. YOU WILL NOT SEE ANY CHARACTERS YOU TYPE.<br />
+When you authenticate, the cloning process will start which takes about 1-2 minutes.</li>
+<li>After you clone the repository there are more commands to type. Press ENTER/RETURN after each one: <br />
+Type <code>git config --global credential.helper store</code> to configure git to save passwords.</li>
 <li>Type <code>git config --global user.email "netid@syr.edu"</code> to configure git to use your email. MAKE SURE TO USE YOUR SU EMAIL ADDRESS!</li>
 <li>Type <code>git config --global user.name "Your Name"</code> to configure git commits with your name.  AGAIN USE YOUR FULL NAME HERE e.g. Michael Fudge.</li>
 <li>While at the command line, let&rsquo;s install some Python modules we will need later in the course. Type: <br />
