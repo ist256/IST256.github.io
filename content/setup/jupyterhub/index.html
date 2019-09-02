@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Migrating to Jupyterhub - IST256</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/readthedocs.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Migrating to Jupyterhub";
+    var mkdocs_page_input_path = "content\\setup\\jupyterhub.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2832355-7', 'ist256.syr.edu');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> IST256</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../syllabus/">Syllabus</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../project/">Project</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../blackboard/">Gradebook</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../toc/">Lessons</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../walkthrough/">Programming Walkthrough</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../watch/">Videos</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Course Setup</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../overview/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../github/">Github</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../github-classroom/">Github Classroom</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../azure/">Azure Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../azure-config/">Azure Config</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../commit-code-git/">Git Commands</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">IST256</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Migrating to Jupyterhub</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="migrating-to-jupyterhub">Migrating to Jupyterhub</h1>
+<h2 id="before-you-begin">Before You Begin</h2>
+<ul>
+<li>Have the following information handy:<ul>
+<li>Your GitHub username and password.</li>
+<li>Your GitHub Classroom repository URL (copy it from the github website).</li>
+<li>The name of your Github repository. This comes after the <code>IST256-classroom.</code> part of your repository URL.</li>
+</ul>
+</li>
+<li>Login to azure notebooks and open the terminal:<ul>
+<li>commit any changes you have made:<br />
+<code>git add --all</code><br />
+<code>git commit -m "moving to jupyterhub"</code></li>
+<li>push code to github:<br />
+<code>git push origin master</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li>Visit: <a href="https://jupyterhub.ischool.syr.edu/">https://jupyterhub.ischool.syr.edu/</a>.</li>
+<li>Click the <strong>Sign in with iSchool SSO</strong> button.</li>
+<li>Click the <strong>Login with your SU NetID button</strong>, then login.</li>
+<li>In about a minute your server will start. When it is finished you will see the Jupyter website.</li>
+<li>Open a terminal. <strong>New</strong> &ndash;&gt; <strong>Terminal</strong></li>
+<li>Clone your repository: <code>git clone</code> then paste in your close repository from the previous step. For example mine was <code>https://github.com/IST256-classroom/2019-fall-learn-python-spring-mafudge</code>.
+You will be prompted for your github username.<br />
+You will be prompted for your github password. YOU WILL NOT SEE ANY CHARACTERS YOU TYPE.<br />
+When you authenticate, the cloning process will start which takes about 1 minute.</li>
+<li>After you clone the repository move into the repository folder:<br />
+<code>cd FOLDER</code> where folder is the name of your Github repository. You can start typing it and press the TAB key to complete it. </li>
+<li>From inside your repository folder, Type: <br />
+<code>git config credential.helper store</code> to configure git to save passwords.</li>
+<li>Type: <code>git config --global user.email "netid@syr.edu"</code> to configure git to use your email. MAKE SURE TO USE YOUR SU EMAIL ADDRESS!</li>
+<li>Type: <code>git config --global user.name "Your Name"</code> to configure git commits with your name.  AGAIN USE YOUR FULL NAME HERE e.g. Michael Fudge.</li>
+</ol>
+<p>You are now setup on jupyterhub!!!</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>&copy; 2018 Michael Fudge</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../js/readthedocs.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
