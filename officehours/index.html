@@ -7,24 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>How to use Git - IST256</title>
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Office Hours Form - IST256</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="../../css/readthedocs.css" rel="stylesheet">
+  <link href="../css/readthedocs.css" rel="stylesheet">
   
   <script>
     // Current page data
-    var mkdocs_page_name = "How to use Git";
-    var mkdocs_page_input_path = "content\\git.md";
+    var mkdocs_page_name = "Office Hours Form";
+    var mkdocs_page_input_path = "officehours.md";
     var mkdocs_page_url = null;
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
@@ -47,9 +47,9 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> IST256</a>
+        <a href=".." class="icon icon-home"> IST256</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
@@ -61,27 +61,30 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../..">Home</a>
+    <a class="" href="..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../syllabus/">Syllabus</a>
+    <a class="" href="../syllabus/">Syllabus</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../project/">Project</a>
+    <a class="" href="../project/">Project</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Office Hours Form</a>
+    <ul class="subnav">
+            
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../officehours/">Office Hours Form</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../../links/">Course Links</a>
+    <a class="" href="../links/">Course Links</a>
 	    </li>
           
         </ul>
@@ -94,7 +97,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">IST256</a>
+        <a href="..">IST256</a>
       </nav>
 
       
@@ -102,11 +105,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
+    <li><a href="..">Docs</a> &raquo;</li>
     
       
     
-    <li>How to use Git</li>
+    <li>Office Hours Form</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -116,35 +119,24 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="how-to-use-git">How to use Git</h1>
-<p>This article outlines how to commit your code to git and push it to GitHub. The process is quite simple and you should get in the habit of doing it whenever you are done coding for the day. </p>
-<h2 id="video">Video</h2>
-<p>Here&rsquo;s a Video of the process.
- TODO: Make video</p>
-<h2 id="procedure">Procedure</h2>
-<ol>
-<li>Log on to JupyterHub Notebooks: <a href="https://jupyterhub.ischool.syr.edu">https://jupyterhub.ischool.syr.edu</a> with your SU NetID and  password.</li>
-<li>Click the <strong>New</strong> button in the upper right and select <strong>Terminal</strong> from the menu to launch the terminal.  </li>
-<li>Change into the library folder, type : <br />
-<code>cd ~/library</code> </li>
-<li>Change into the git folder, type : <br />
-<code>cd 202</code> then press the <strong>[TAB]</strong> key to complete the folder name! Cool! </li>
-<li>Your prompt should now indicate you are in the repository folder. You can verify by typing:<br />
-<code>git status</code> <br />
-If you see <strong>fatal: not a git repository</strong> then you are not in the correct folder. Try the previous steps again.</li>
-<li>To make git track the changes you made, type : <br />
-<code>git add --all</code></li>
-<li>To make git save the changes you made, type : <br />
-<code>git commit -m "[[Your Message]]</code><br />
-Of course, you don&rsquo;t type <code>[[Your Message]]</code>!!! Instead you should enter a brief message about the work you&rsquo;re saving. e.g. <code>"Completed lab 2"</code> or <code>"still working on HW 3"</code>.</li>
-<li>To send your saved changes to Github, type : <br />
-<code>git push origin master</code></li>
-</ol>
-<p>That&rsquo;s it! You can view your work on the Github website if you like.</p>
+                <p>Office Hours Form</p>
+<p><a href="https://forms.gle/9KvFHG3K8ooNXMji9" target="_officehours">https://forms.gle/9KvFHG3K8ooNXMji9</a></p>
+<script>
+window.location = 'https://forms.gle/9KvFHG3K8ooNXMji9'
+</script>
               
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../links/" class="btn btn-neutral float-right" title="Course Links">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../project/" class="btn btn-neutral" title="Project"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -170,13 +162,17 @@ Of course, you don&rsquo;t type <code>[[Your Message]]</code>!!! Instead you sho
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href="../project/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../links/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../js/readthedocs.js" defer></script>
-      <script src="../../search/main.js" defer></script>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../js/readthedocs.js" defer></script>
+      <script src="../search/main.js" defer></script>
 
 </body>
 </html>
