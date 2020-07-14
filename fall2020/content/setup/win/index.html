@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Python/Git Install Instructions for Windows :fa-windows: - IST256</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/readthedocs.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Python/Git Install Instructions for Windows :fa-windows:";
+    var mkdocs_page_input_path = "content\\setup\\win.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2832355-7', 'ist256.github.io');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> IST256</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../syllabus/">Syllabus</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../project/">Project</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../links/">Course Links</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">IST256</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Python/Git Install Instructions for Windows :fa-windows:</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="pythongit-install-instructions-for-windows">Python/Git Install Instructions for Windows <i class="fa fa-windows"></i></h1>
+<h4 id="important-note">IMPORTANT NOTE</h4>
+<p><strong>You should no longer require these instructions, however if you would like to install the python environment on your personal computer, continue.</strong></p>
+<hr>
+
+<p>For this course you will need to install the following applications: </p>
+<ol>
+<li>Python 3.6.6</li>
+<li>A bunch of Python Modules</li>
+<li>Git 2.18</li>
+</ol>
+<p>Each of these applications are free / open-source and will not cost you any money. Detailed instructions for how to install these applications are provided below.</p>
+<h2 id="before-you-begin">Before You Begin</h2>
+<ul>
+<li>Make sure you have <strong>at least 250MB (1/4 GB) free space</strong> on your computer.  If you don&rsquo;t know how to check this, refer to these instructions: <a href="http://www.windowscentral.com/windows-10-check-free-space-hard-disk">http://www.windowscentral.com/windows-10-check-free-space-hard-disk</a></li>
+<li>Are you 32bit or 64bit Windows? Most new computers are going to be 64-bit, but some consumer-grade Windows laptops are still 32-bit. Here&rsquo;s how you figure it out: <a href="http://www.howtogeek.com/howto/21726/how-do-i-know-if-im-running-32-bit-or-64-bit-windows-answers/">http://www.howtogeek.com/howto/21726/how-do-i-know-if-im-running-32-bit-or-64-bit-windows-answers/</a></li>
+<li>You must know how to create a folder. Don&rsquo;t know how to do this?  Check out:<a href="https://www.laptopmag.com/articles/create-new-folder-windows-10">https://www.laptopmag.com/articles/create-new-folder-windows-10</a></li>
+<li>You must know how to open up the command line / a terminal window on your PC. It can be in any folder. Not sure how to do this? Consult this article: <a href="/faq/#command-line-windows">How Do I Open The Command Line?</a></li>
+<li>Make sure your computer is plugged in or fully charged and you have a good internet connection. The setup can take a while.</li>
+</ul>
+<h2 id="setup-procedure">Setup Procedure</h2>
+<h3 id="step-0-folder-and-command-line-powershell">Step 0 : Folder and Command Line (PowerShell)</h3>
+<ol>
+<li>Create a folder called <code>IST256</code>. You can make this folder where ever you want: on your desktop, in your <code>Documents</code>, etc&hellip; What&rsquo;s most important is to <strong>remember where it is and how to find it</strong>!</li>
+<li>Open the command line on your computer inside this folder. For more info, read: <a href="/faq/#command-line-windows">How Do I Open The Command Line?</a></li>
+<li>Check yourself. From the command line, type: <code>pwd</code> and press the ENTER key. Does the Path have <code>IST256</code> at the end? Then you are in the correct folder and may proceed!</li>
+</ol>
+<h2 id="automatic-setup-instructions">Automatic Setup Instructions</h2>
+<p>Why not try the automated setup first?  If it works for you, woot!</p>
+<ol>
+<li>From the command line, type:<br />
+<code>wget http://ist256.github.io/content/install/win/install.txt -OutFile install.ps1 | Powershell -ExecutionPolicy Bypass -File install.ps1</code><br />
+This will start the process of installing everything.<br />
+This will take a few minutes to complete.<br />
+NOTE: You may have to enter your administrator password.</li>
+<li>When the setup is complete, check the reported versions output by the setup script. They should be at least these versions:<br />
+Python 3.6.6<br />
+Jupyter 5.5.0<br />
+Pip 18.1<br />
+Git 2.18.0  </li>
+<li>You can check these yourself if you like with these commands: <br />
+<code>python --version</code><br />
+<code>jupyter-notebook --version</code><br />
+<code>pip --version</code> and <br />
+<code>git --version</code></li>
+</ol>
+<p>If everything reports correctly, complete the rest of the <a href="../overview/">Course Setup Checklist</a></p>
+<h2 id="manual-setup-instructions">Manual Setup Instructions</h2>
+<p>ONLY DO THESE IF YOUR AUTOMATIC SETUP DOES NOT WORK!</p>
+<h3 id="step-1-install-python">Step 1: Install Python</h3>
+<p>First we will install Python. From the command line, type each of these and press ENTER to execute them:</p>
+<ol>
+<li>First we need to update PowerShell to use the latest SSL protocol. Type:<br />
+<code>[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12</code></li>
+<li>Now we will download Python to our computer. Command to type:<br />
+<code>wget https://www.python.org/ftp/python/3.6.6/python-3.6.6-amd64.exe -OutFile python-3.6.6-amd64.exe</code></li>
+<li>After the file is downloaded, we can install Python. Command to type:<br />
+<code>.\python-3.6.6-amd64.exe /passive InstallAllUsers=0 PrependPath=1 SimpleInstall=1</code><br />
+The setup will take a minute or so. Be patient.</li>
+<li>Close the command line window, then re-open the command line in your <code>IST256</code> folder. This is an important step. Python will not work unless you do this!</li>
+<li>Try out python to see if it works. Type this command. <br />
+<code>python -c "print('YAY')"</code><br />
+ If it works, you will see <code>YAY</code> in your terminal window. If so, it&rsquo;s time to move on to the next step. If you see errors, something went wrong with the previous steps.</li>
+</ol>
+<h3 id="step-2-install-python-modules">Step 2: Install Python modules</h3>
+<p>Next we will install the common Python components we will use in this course. This will save you a lot of time and headaches later on!</p>
+<ol>
+<li>First we will upgrade <strong>pip</strong> Python&rsquo;s package manager. From the command line, type: <br />
+<code>python -m pip install --upgrade pip</code> </li>
+<li>Next we install the Python JupyterLab environment we will use to write our code.<br />
+<code>pip install --upgrade ipython jupyter jupyterlab setuptools wheel</code> <br />
+This will take a while as it downloads these modules and their dependencies from the internet.  </li>
+<li>Next we install more modules we will use in this course. Type: <br />
+<code>pip install -U geocoder lxml terminado numpy scipy requests</code><br />
+Again, this might take a few minutes, so be patient.</li>
+<li>Finally, we install the last round of Python modules we will use in this course. Type: <br />
+<code>pip install -U pandas matplotlib plotly cufflinks folium bs4</code> <br />
+And as usual it will take some time to install these modules.</li>
+<li>You can verify Jupyter is working by typing the following at the command line: <br />
+<code>jupyter-lab</code>  <br />
+If it works, you will see Jupyter Lab open in your web browser. To exit Jupyter, close the browser, return to the command line and press <code>CTRL+C</code> two times. </li>
+<li>Close the terminal window.</li>
+</ol>
+<h3 id="step-3-install-the-git-utility">Step 3: Install the git utility.</h3>
+<ol>
+<li>Again, first we need to update PowerShell to use the latest SSL protocol. Type:<br />
+<code>[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12</code></li>
+<li>First we will download Git to our computer. Command to type:<br />
+<code>wget https://github.com/git-for-windows/git/releases/download/v2.18.0.windows.1/Git-2.18.0-64-bit.exe -OutFile git-2.18.0-64-bit.exe</code></li>
+<li>After the file is downloaded, we can install Git. Command to type:<br />
+<code>./git-2.18.0-64-bit.exe /SILENT</code><br />
+The setup will take a minute or so. Be patient.</li>
+<li>Close the command line window, then re-open the command line in your <code>IST256</code> folder. This is an important step. Python will not work unless you do this!</li>
+<li>Try out python to see if it works. Type this command. <br />
+<code>git --version</code><br />
+ If it works, you will see <code>2.18</code> in your terminal window as the Git version. If so you&rsquo;re done!</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>&copy; 2020 Michael Fudge</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../js/readthedocs.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
