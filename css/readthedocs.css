@@ -33,6 +33,7 @@ code {
 
 td, th {
   border: 1px solid #403d39 !important;
+  padding: 5px;
 }
 
 th {
