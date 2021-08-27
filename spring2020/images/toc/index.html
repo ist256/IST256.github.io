@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Course Content Lessons - IST256</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/readthedocs.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Course Content Lessons";
+    var mkdocs_page_input_path = "images\\toc.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2832355-7', 'ist256.github.io');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> IST256</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../syllabus/">Syllabus</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../project/">Project</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../jupyterhub/">Jupyterhub</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../blackboard/">Gradebook</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../setup/">Course Setup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../content/toc/">OLD Lessons</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">IST256</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Course Content Lessons</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="course-content-lessons">Course Content Lessons</h1>
+<table>
+<thead>
+<tr>
+<th>Lesson</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00</td>
+<td><a href="#lesson-00-course-introduction">Course Introduction</a></td>
+</tr>
+<tr>
+<td>01</td>
+<td><a href="#lesson-01-introduction-to-programming">Introduction to Programming</a></td>
+</tr>
+<tr>
+<td>02</td>
+<td><a href="#lesson-02-introduction-to-python">Introduction to Python</a></td>
+</tr>
+<tr>
+<td>03</td>
+<td><a href="#lesson-03-variables-and-types">Variables and Types</a></td>
+</tr>
+<tr>
+<td>04</td>
+<td><a href="#lesson-04-conditionals">Conditionals</a></td>
+</tr>
+<tr>
+<td>05</td>
+<td><a href="#lesson-05-iterations">Iterations</a></td>
+</tr>
+<tr>
+<td>06</td>
+<td><a href="#lesson-06-functions">Functions</a></td>
+</tr>
+<tr>
+<td>07</td>
+<td><a href="#lesson-07-strings">Strings</a></td>
+</tr>
+<tr>
+<td>08</td>
+<td><a href="#lesson-08-files">Files</a></td>
+</tr>
+<tr>
+<td>09</td>
+<td><a href="#lesson-09-lists">Lists</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="#lesson-10-dictionaries">Dictionaries</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="#lesson-11-web-services-and-apis">Web Services and API&rsquo;s</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="#lesson-12-data-analysis">Data Analysis</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="#lesson-13-visualization">Visualization</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="lesson-00-course-introduction">Lesson 00: Course Introduction</h2>
+<h3 id="overview">Overview</h3>
+<p>In this lesson we learn: </p>
+<ul>
+<li>What is this course about? </li>
+<li>Course content, how you will be evaluated, course policies and procedures.</li>
+<li>Instructor expectations of students in and out of class and getting help.</li>
+<li>How the technologies we used in the course keep you engaged and help you to learn. </li>
+<li>How to access the components of the course: Zybook, Github, gitter.im, SU Google, Zybook Participationzes, and attendance and class participation.</li>
+</ul>
+<h3 id="resources">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li>Review our <a href="../Syllabus">Course Syllabus</a></li>
+<li>Familiarize yourself with our <a href="http://ist256.syr.edu">Course Website</a> </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video to get you inspired!<ul>
+<li><a href="https://www.youtube.com/watch?v=xfBWk4nw440">&ldquo;TEDxSMU: You Should Learn to Program&rdquo;, by Christian Genco</a></li>
+<li><a href="https://www.youtube.com/watch?v=-jRREn6ifEQ">&ldquo;TEDxCERN: The poetry of programming&rdquo;, by Linda Liukas</a></li>
+<li><a href="https://youtu.be/XSs4yC1TJg0">See what previous students have done on IST256 demo day</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/00/Course-Intro.pptx">First Day Of Class</a>  </li>
+<li><a href="/content/setup/overview">Course Setup Checklist</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due">What&rsquo;s Due?</h3>
+<ul>
+<li>There are no graded work is due but you must complete the <a href="/content/setup/overview">Course Setup Checklist</a> by first recitation. Next we we start programming and your laptop needs to be setup! </li>
+</ul>
+<h2 id="lesson-01-introduction-to-programming">Lesson 01: Introduction To Programming</h2>
+<h3 id="overview_1">Overview</h3>
+<p>This lesson we learn: 
+- What is programming? Why do it? Why is it difficult?  Why programming is a critical 21st century skill? What does it take to be a good programmer?
+- The input-process-output model, how computers process programs, interpreters / compilers, syntax /semantics, code and execution.
+- Source code management with Git and GitHub.</p>
+<h3 id="resources_1">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li><a href="https://medium.freecodecamp.org/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2">How to think like a programmer - Lessons in problem solving</a></li>
+<li><a href="/content/walkthrough">Programming walk-through</a>.</li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <ul>
+<li><a href="https://youtu.be/xvwBtODV0ms">5 Minute Overview of Git</a>   </li>
+<li><a href="https://youtu.be/hUW5MEKDtMM">5 minutes of Files, Folders and Directories</a></li>
+</ul>
+</li>
+<li>Python for Everybody: <a href="https://youtu.be/fvhNadKjE8g">Ch1 Part 1</a> | <a href="https://youtu.be/VQZTZsXk8sA">Part 2</a> </li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/01/Intro-To-Programming.pptx">Introduction to Programming</a> </li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_1">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Coding Lab [L01]</strong>  <ul>
+<li>The lab can be found in part 2 of the <a href="/content/walkthrough">Programming walk-through</a>.</li>
+<li>You will turn in your lab as part of the walk-through. </li>
+<li>this lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H01]</strong><ul>
+<li>The homework can be found in part 3 of the <a href="/content/walkthrough">Programming walk-through</a>.</li>
+<li>Turn in your homework by following the git submission procedure outlined in the document.</li>
+<li>This must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-02-introduction-to-python">Lesson 02: Introduction to Python</h2>
+<h3 id="overview_2">Overview</h3>
+<p>This lesson we learn:</p>
+<ul>
+<li>What is Python? What are the advantages / disadvantages of the language? How does it compare with other programming languages? </li>
+<li>The Jupyter Notebook environment.  How to execute programs from the Jupyter environment.</li>
+<li>Python programming language basics. Print, Assignment and Input statements.</li>
+<li>Writing simple programs in Python following the Input / Process / Output model.</li>
+<li>Python source code management with Git and GitHub.</li>
+</ul>
+<h3 id="resources_2">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li>ZyBook <a href="https://learn.zybooks.com">Ch 1: Introduction</a>  (Participation Activities only)</li>
+<li>Python for Everybody <a href="https://books.trinket.io/pfe/01-intro.html">Ch 1</a> </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/jZ952vChhuI">Quick Tour of Jupyter Notebook</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/LLzFNlCjTSo">Ch1 Part 3</a> | <a href="https://youtu.be/gsry2SYOFCw">Part 4</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/02/Intro-To-Python.pptx">Introduction to Python</a> </li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/02</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_2">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z01]</strong><ul>
+<li>Chapter 1 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L02]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/02/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H02] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/02/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-03-variables-and-types">Lesson 03: Variables and Types</h2>
+<h3 id="overview_3">Overview</h3>
+<p>This lesson we learn:</p>
+<ul>
+<li>What is a variable? What is its purpose? </li>
+<li>Variable assignment, and access.</li>
+<li>Different data types for variables. </li>
+<li>How to input variables of various types, check types, convert types, and print variables with formatting. </li>
+<li>Arithmetic expressions, arithmetic operators, and operands.</li>
+</ul>
+<h3 id="resources_3">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li><a href="https://learn.zybooks.com">ZyBook Ch 2: Variables And Types</a> (Participation Activities Only)</li>
+<li>Python for Everybody <a href="https://books.trinket.io/pfe/02-variables.html">Ch 2: Variables, Expressions, Statements</a> </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/ZZQa2Avm2YE">End to End Example: Variables and Types</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/7KHdV6FSpo8">Ch2 Part 1</a> | <a href="https://youtu.be/kefrGMAglGs">Part 2</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/03/Variables-And-Types.pptx">Variables And Types</a></li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/03</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_3">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z02]</strong><ul>
+<li>Chapter 2 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L03]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/03/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H03] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/03/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-04-conditionals">Lesson 04: Conditionals</h2>
+<h3 id="overview_4">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>How to make our code execute in a non linear fashion through the use of conditionals.</li>
+<li>Relational and logical operators for making boolean expressions which form the basis of our decisions. </li>
+<li>Different types of non-linear execution like conditional excution, alternative execution, chaining, and nesting, and their appropriate uses. </li>
+<li>How to handle run-time errors with try..except.   </li>
+</ul>
+<h3 id="resources_4">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li><a href="https://learn.zybooks.com">ZyBook Ch 3: Conditionals</a> (Participation Activities Only)</li>
+<li>Python for Everybody <a href="https://books.trinket.io/pfe/03-conditional.html">Ch 3: Conditionals</a> </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/ZwbOSDqIrx4">End to End Example: Conditionals</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/2aA3VBdcl6A">Ch3 Part 1</a> | <a href="https://youtu.be/OczkNrHPBps">Part 2</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/04/Conditionals.pptx">Conditionals</a> </li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/04</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_4">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z03]</strong><ul>
+<li>Chapter 3 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L04]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/04/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H04] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/04/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-05-iterations">Lesson 05: Iterations</h2>
+<h3 id="overview_5">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>How to make our code execute in a non linear fashion through the use of iterations, or loops.</li>
+<li>The while loop for indefinite looping, infinite loops, and the break and continue statements</li>
+<li>How to build complex loops easily. </li>
+<li>Definite loops (for loops) and iterators.</li>
+</ul>
+<h3 id="resources_5">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li><a href="https://learn.zybooks.com">ZyBook Ch 4: Iterations</a> (Participation Activities Only)</li>
+<li>Python for Everybody <a href="https://books.trinket.io/pfe/05-iterations.html">Ch 5: Iterations</a>     </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/8xr8boE79hU">End to End Example: Iterations</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/FzpurxjwmsM">Ch5 Part 1</a> | <a href="https://youtu.be/5QDrj5ogPYc">Part 2</a>  | <a href="https://youtu.be/xsavQp8hd78">Part 3</a>  | <a href="https://youtu.be/yjlMMwf9Y5I">Part 4</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/05/Iterations.pptx">Iterations</a> </li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/05</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_5">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z04]</strong><ul>
+<li>Chapter 4 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L05]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/05/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H05] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/05/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-06-functions">Lesson 06: Functions</h2>
+<h3 id="overview_6">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>How to use other functions in modules.</li>
+<li>How to inspect module contents and get help on functions. </li>
+<li>The anatomy of custom functions: arguments, named arguments, return values</li>
+<li>How to modularize our code with custom functions.</li>
+</ul>
+<h3 id="resources_6">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li><a href="https://learn.zybooks.com">ZyBook Ch 5: Functions</a></li>
+<li>Python for Everybody  <a href="https://books.trinket.io/pfe/04-functions.html">Ch 4: Functions</a>     </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/9lj1kgQdZSg">End to End Example: Functions</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/5Kzw-0-DQAk">Ch4 Part 1</a> | <a href="https://youtu.be/AJVNYRqn8kM">Part 2</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/06/Functions.pptx">Functions</a> </li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/06</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_6">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z05]</strong><ul>
+<li>Chapter 5 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L06]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/06/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H06] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/06/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-07-strings">Lesson 07: Strings</h2>
+<h3 id="overview_7">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>Strings as an immutable sequence of characters.</li>
+<li>Index and Slice notation for retrieving sub-strings.</li>
+<li>Built-in string functions to perform operations on strings.</li>
+<li>Techniques for parsing and tokenizing string data.</li>
+<li>How to sanitize input with string functions.</li>
+</ul>
+<h3 id="resources_7">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li>ZyBook <a href="https://learn.zybooks.com">Ch 6: Strings</a></li>
+<li>Python for Everybody <a href="https://books.trinket.io/pfe/06-strings.html">Ch 6: Strings</a>     </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/5ONnMc0rw_k">End to End Example: Strings</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/dr98iM4app8">Ch6 Part 1</a> | <a href="https://youtu.be/bIFpJ-qZ3Cc">Part 2</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/07/Strings.pptx">Strings</a> </li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/07</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_7">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z06]</strong><ul>
+<li>Chapter 6 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L07]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/07/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H07] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/07/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-08-files">Lesson 08: Files</h2>
+<h3 id="overview_8">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>The importance of a persistence layer in programming.</li>
+<li>How to read and write from files.</li>
+<li>Techniques for reading a file a line at a time. </li>
+<li>Using exception handling with files.</li>
+</ul>
+<h3 id="resources_8">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li>ZyBook <a href="https://learn.zybooks.com">Ch 7: Files</a></li>
+<li>Python for Everybody <a href="https://books.trinket.io/pfe/07-files.html">Ch 7: Files</a>     </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/s-1ToO0dJIs">End to End Example: Files</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/9KJ-XeQ6ZlI">Ch7 Part 1</a> | <a href="https://youtu.be/0t4rvnySKR4">Part 2</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/08/Files.pptx">Files</a>  </li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/08</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_8">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z07]</strong><ul>
+<li>Chapter 7 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L08]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/08/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H08] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/08/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-09-lists">Lesson 09: Lists</h2>
+<h3 id="overview_9">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>Lists as a mutable sequence of values.</li>
+<li>Indexing list values; slice notation.</li>
+<li>List functions and operations like add, remove, update, find</li>
+<li>Common patterns for list management.</li>
+</ul>
+<h3 id="resources_9">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li>ZyBook <a href="https://learn.zybooks.com">Ch 8: Lists</a></li>
+<li>Python for Everybody <a href="https://books.trinket.io/pfe/08-lists.html">Ch 8: lists</a>     </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/X8QJhDTuffs">End to End Example: Lists</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/ljExWqnWQvo">Ch8 Part 1</a> | <a href="https://youtu.be/bV1FQUBIApM">Part 2</a> | <a href="https://youtu.be/GxADdpo6EP4">Part 3</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/09/Lists.pptx">Lists</a></li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/09</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_9">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z08]</strong><ul>
+<li>Chapter 8 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L09]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/09/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H09] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/09/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-10-dictionaries">Lesson 10: Dictionaries</h2>
+<h3 id="overview_10">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>Dictionaries as key-value pairs.</li>
+<li>Basic dictionary operations such as getting/setting keys and values</li>
+<li>Common dictionary use cases, such as representing complex objects.</li>
+<li>List of dictionary as an in-memory database of objects.</li>
+<li>Using the json library to load and save dictionaries to files. </li>
+</ul>
+<h3 id="resources_10">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li>ZyBook <a href="https://learn.zybooks.com">Ch 9: Dictionaries</a></li>
+<li>Python for Everybody <a href="https://books.trinket.io/pfe/09-dictionaries.html">Ch 9: Dictionaries</a>     </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/l-2_Cq60trE">End to End Example: Dictionaries</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/yDDRMb-1cxI">Ch9 Part 1</a> | <a href="https://youtu.be/LRSIuH94XM4">Part 2</a> | <a href="https://youtu.be/ZDjiFB1Ib84">Part 3</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/10/Dictionaries.pptx">Dictionaries</a> </li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/10</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_10">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z09]</strong><ul>
+<li>Chapter 9 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L10]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/10/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H10] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/10/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-11-web-services-and-apis">Lesson 11: Web Services and APIs</h2>
+<h3 id="overview_11">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>How the web works!</li>
+<li>Making HTTP requests using Python requests</li>
+<li>Parsing json into lists of dictionaries</li>
+<li>General procedure for reading and calling API&rsquo;s on the web.</li>
+</ul>
+<h3 id="resources_11">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li><a href="./11/Web-APIs-In-Python.html">Web APIs in Python</a> (Professor&rsquo;s Notes)</li>
+<li>Python for Everybody <a href="https://books.trinket.io/pfe/13-web.html">Ch 13: Web Services</a>     </li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/bq84DAusemo">End to End Example: Web API&rsquo;s</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/Lr9Vm-VghAk">Ch12 Part 3</a> | <a href="https://youtu.be/7NEtEctD9Cw">Ch13 Part 1</a> | <a href="https://youtu.be/J5DjteDzgoM">Part 4</a> </li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/11/Web-Services-Apis.pptx">Web Services and API&rsquo;s</a> </li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/11</em>.</li>
+</ul>
+</li>
+<li>Other Resources<ul>
+<li>ZyBook <a href="https://learn.zybooks.com">Ch 10: Modules</a></li>
+<li><a href="https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177">HTTP: The Protocol Every Web Developer must know</a></li>
+<li><a href="http://docs.python-requests.org/en/master/user/quickstart/">Python Requests Quickstart</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_11">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Coding Lab [L11]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/11/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 11:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H11] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/11/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-12-data-analysis">Lesson 12: Data Analysis</h2>
+<h3 id="overview_12">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>What exactly is Pandas</li>
+<li>What is data analysis?</li>
+<li>How can Pandas help you perform data analysis?</li>
+<li>Managing Pandas data structures.</li>
+</ul>
+<h3 id="resources_12">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li><a href="./12/Data-Analysis-With-Pandas.html">Data Analysis With Pandas</a> (Professor&rsquo;s Notes)</li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: <a href="https://youtu.be/_qrwCFn1A3I">End to End Example: Data Analysis in Pandas</a></li>
+<li><a href="https://www.youtube.com/watch?v=Iqjy9UqKKuo">Python for Data Analysis by Sentdex</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/12/Data-Analysis.pptx">Data Analysis with Pandas</a> </li>
+<li><a href="http://nbviewer.jupyter.org/github/justmarkham/pandas-videos/blob/master/pandas.ipynb">How do I do THAT in Pandas? By Dataschool.io</a></li>
+<li><a href="http://pandas.pydata.org/pandas-docs/stable/tutorials.html">Master Pandas: The Official Pandas Tutorials</a></li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/12</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_12">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Coding Lab [L12]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/12/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 12:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H12] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/12/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+<h2 id="lesson-13-visualization">Lesson 13: Visualization</h2>
+<h3 id="overview_13">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>Why information visualization is important</li>
+<li>The various ways to visualize information</li>
+<li>The basic requirements for any visualization</li>
+<li>How to plot complex visualizations such as multi-series charts and maps</li>
+</ul>
+<h3 id="resources_13">Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> Readings<ul>
+<li>ZyBook <a href="https://learn.zybooks.com">Ch 10: Plotting</a></li>
+<li><a href="http://matplotlib.org/users/pyplot_tutorial.html">Matplotlib Tutorial</a></li>
+<li><a href="https://plot.ly/python/getting-started/">Plot.ly Tutorial</a></li>
+<li><a href="https://plot.ly/ipython-notebooks/cufflinks/">Plot.ly Cufflinks</a></li>
+<li><a href="https://python-visualization.github.io/folium/quickstart.html">Folium Quickstart</a></li>
+</ul>
+</li>
+<li><i class="fa fa-play-circle"></i> Video<ul>
+<li>IST256.tv: End to End Example: Mapping Potholes</li>
+<li><a href="https://www.youtube.com/playlist?list=PLQVvvaa0QuDfefDfXb9Yf0la1fPDKluPF">Matplotlib Tutorial Series</a></li>
+</ul>
+</li>
+<li><i class="fa fa-file-text"></i> Class Resources<ul>
+<li>Slides: <a href="/content/13/Visualization.pptx">Visualization</a> </li>
+<li>Code Samples can be found in your GitHub repository <em>content/Lessons/13</em>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="whats-due_13">What&rsquo;s Due?</h3>
+<ul>
+<li><strong>Zybook Participation [Z10]</strong><ul>
+<li>Chapter 10 Participation Activities</li>
+<li>It must be completed by 3pm on lecture day.</li>
+</ul>
+</li>
+<li><strong>Coding Lab [L13]</strong>  <ul>
+<li>The lab is in your Git repository folder: <em>content/lessons/13/Class-Coding-Lab</em> </li>
+<li>Turn in your completed lab using the git submission procedure.</li>
+<li>Lab must be completed by the end of the day 13:59pm before your recitation day.</li>
+</ul>
+</li>
+<li><strong>Homework [H13] Now You Code - as Assigned by your Recitation Instructor</strong><ul>
+<li>The homework assignment can be found in your git repository folder <em>content/lessons/13/Now-You-Code/</em></li>
+<li>Turn in your homework using the git submission procedure.</li>
+<li>Must be completed by end of the week: Saturday evening 11:59pm </li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>&copy; 2020 Michael Fudge</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/readthedocs.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

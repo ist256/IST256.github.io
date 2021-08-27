@@ -13070,28 +13070,6 @@ div#notebook {
     });
     </script>
     <!-- End of mathjax configuration --></head>
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/main.css">
-
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<script src="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/toc2.js"></script>
-
-<script>
-$( document ).ready(function(){
-
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": false, "sideBar": false, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": false, "toc_window_display": false};
-
-            // fire the main function with these parameters
-            require(['nbextensions/toc2/toc2'], function (toc2) {
-                toc2.table_of_contents(cfg);
-            });
-    });
-</script>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -16719,7 +16697,7 @@ Sorry the contents of https://httpbin.org/html are not in the JSON format!
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">darksky_key</span> <span class="o">=</span> <span class="s1">&#39;zyx1234567890abcdefg&#39;</span>
 <span class="n">lat</span> <span class="o">=</span> <span class="mf">37.8267</span>
 <span class="n">long</span> <span class="o">=</span> <span class="o">-</span><span class="mf">122.4233</span>
-<span class="n">url</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot;https://api.darksky.net/forecast/</span><span class="si">{darksky_key}</span><span class="s2">/</span><span class="si">{lat}</span><span class="s2">/</span><span class="si">{long}</span><span class="s2">&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://api.darksky.net/forecast/</span><span class="si">{</span><span class="n">darksky_key</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">lat</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">long</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">url</span><span class="p">)</span>
 </pre></div>
@@ -16802,12 +16780,12 @@ Sorry the contents of https://httpbin.org/html are not in the JSON format!
 </ol>
 <p>The details:</p>
 <ol>
-<li>When you signup on the website, the API issues you a <code>client_id</code> (think of this as a unique username for your API) and a <code>client_secret</code> (consider this your client_id's password). this means you are not authenitcating with your own credentials. The service will provide you with an <strong>authorization endpoint</strong> which is token issuer. </li>
+<li>When you signup on the website, the API issues you a <code>client_id</code> (think of this as a unique username for your API) and a <code>client_secret</code> (consider this your client_id's password). this means you are not authenitcating with your own credentials. The service will provide you with an <strong>authorization endpoint</strong> which is token issuer. In Effect you "Log in" to the service not with your username and password but with the <code>client_id</code> and <code>client_secret</code> instead. </li>
 <li>You make an HTTP request to the <strong>authorization endpoint</strong>, sending your <code>client_id</code> and <code>client_secret</code>, typically in the query string. This asks the API to authenticate your credentials and issue you a <code>token</code> in the response headers under the key <code>Authroization</code>. The token returned is a very long text string. Tokens expire and cannot be used forever.</li>
 <li>From this point forward, when you need to call the API, you provide your issued token in the header, like this <code>{ 'Authorization' : 'Bearer ' + token }</code></li>
 </ol>
 <p>As a best practice you should renew the token only when it expires.</p>
-<p>Here's an example of what this might look like for a given API:</p>
+<p>Here's an example of what this might look like for a given API. In this example, the API gets the token using the <strong>HTTP GET</strong> method, which is less secure and not used as much anymore.</p>
 
 </div>
 </div>
@@ -16817,20 +16795,58 @@ Sorry the contents of https://httpbin.org/html are not in the JSON format!
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">client_id</span><span class="o">=</span><span class="s1">&#39;abc123&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># OAUTH2 CLIENT CREDENTIALS FLOW - GET METHOD</span>
+<span class="n">client_id</span><span class="o">=</span><span class="s1">&#39;abc123&#39;</span>
 <span class="n">client_secret</span><span class="o">=</span><span class="s1">&#39;zyx1234567890abcdefg&#39;</span>
 
-<span class="c1"># get the token.</span>
+<span class="c1"># get the Bearer token, HTTP GET Method</span>
 <span class="n">query_string</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;grant_type&#39;</span> <span class="p">:</span> <span class="s1">&#39;client_credentials&#39;</span><span class="p">,</span> <span class="s1">&#39;client_id&#39;</span> <span class="p">:</span> <span class="n">client_id</span><span class="p">,</span> <span class="s1">&#39;client_secret&#39;</span> <span class="p">:</span> <span class="n">client_secret</span> <span class="p">}</span>
-<span class="n">endpoint_url</span> <span class="o">=</span> <span class="s1">&#39;https://someservice.com/token&#39;</span>
+<span class="n">token_url</span> <span class="o">=</span> <span class="s1">&#39;https://someservice.com/token&#39;</span>
 <span class="n">auth_response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">endpoint_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">query_string</span><span class="p">)</span>
-<span class="n">token</span> <span class="o">=</span> <span class="n">auth_response</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;Authorization&#39;</span><span class="p">]</span>
+<span class="n">token</span> <span class="o">=</span> <span class="n">auth_response</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;Key-For-Access-Token&#39;</span><span class="p">]</span>
 
 <span class="c1"># now that we have the token we can keep using it in our api calls.</span>
 <span class="n">api_url</span> <span class="o">=</span> <span class="s1">&#39;https://someservice.com/api&#39;</span>
-<span class="n">api_headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Authorize&#39;</span> <span class="p">:</span> <span class="s1">&#39;Bearer&#39;</span> <span class="o">+</span> <span class="n">token</span> <span class="p">}</span>
+<span class="n">api_headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Authorization&#39;</span> <span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">token</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">}</span>
 <span class="n">api_response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">api_url</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">api_headers</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">api_response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here is another example, this time the service uses the <strong>HTTP Post method</strong>. This is  a more secure method than the GET method because the <code>client_id</code> and <code>client_secret</code> are not visible on the URL. Most services will use this pattern today:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># OAUTH2 CLIENT CREDENTIALS FLOW - POST METHOD</span>
+<span class="n">client_id</span><span class="o">=</span><span class="s1">&#39;abc123&#39;</span>
+<span class="n">client_secret</span><span class="o">=</span><span class="s1">&#39;zyx1234567890abcdefg&#39;</span>
+<span class="n">body</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;grant_type&#39;</span> <span class="p">:</span> <span class="s1">&#39;client_credentials&#39;</span><span class="p">}</span>
+
+<span class="c1"># get the Bearer Token, HTTP POST method</span>
+<span class="n">token_url</span> <span class="o">=</span> <span class="s1">&#39;https://someservice.com/token&#39;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">token_url</span><span class="p">,</span>  <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">client_secret</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">body</span><span class="p">)</span>
+<span class="n">token</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;Key-For-Access-Token&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+
+<span class="c1"># now that we have the token we can keep using it in our api calls.oken</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;Authorization&quot;</span> <span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">token</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">}</span>
+<span class="n">query_string</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;q&#39;</span> <span class="p">:</span> <span class="s1">&#39;search-example&#39;</span> <span class="p">}</span>
+<span class="n">endpoint_url</span> <span class="o">=</span> <span class="s1">&#39;https://someservice/api/search&#39;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">endpoint_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">query_string</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 </pre></div>
 
     </div>

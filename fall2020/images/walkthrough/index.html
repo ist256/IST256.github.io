@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Programming Walk-Through - IST256</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/readthedocs.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Programming Walk-Through";
+    var mkdocs_page_input_path = "images\\walkthrough.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2832355-7', 'ist256.github.io');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> IST256</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../syllabus/">Syllabus</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../project/">Project</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../links/">Course Links</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">IST256</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Programming Walk-Through</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="programming-walk-through">Programming Walk-Through</h1>
+<p>There are activities in this walk-through which count towards your L01 (Lab) and H01 (Homework) grades this week, so pay very close attention!</p>
+<h2 id="part-1-overview">Part 1: Overview</h2>
+<h3 id="becoming-a-modern-programmer">Becoming a Modern programmer</h3>
+<p>Programming is more than just writing code and solving problems. Modern programming is a collaborative activity. For instance, so <a href="https://github.com/torvalds/linux">many people contribute code to the Linux kernel, the number of contributors is too high to count</a>! This is why one of the learning objectives of this course is to:</p>
+<pre><code>&quot;Understand how to code in teams, collaborate with others and manage source code.&quot;
+</code></pre>
+
+<p>To do that we need to learn and use the same tools and techniques that actual programmers use. It&rsquo;s going to steepen our learning curve a bit, but trust us when we say it&rsquo;s worth it!</p>
+<p><strong>Remember.</strong> Today&rsquo;s programmers:</p>
+<ul>
+<li>Use the command line to operate their computer.</li>
+<li>Use <strong>git</strong> (or some other source code manager) manage their code.</li>
+<li>Write code that is easily understood by others</li>
+<li>Can explain their code to others (including non-programmers)</li>
+</ul>
+<p>You&rsquo;ll do each of these, many times throughout this course. You&rsquo;ll start some of them RIGHT NOW!</p>
+<h3 id="goals-of-this-walk-through">Goals of this walk-through</h3>
+<p>The goal of this exercise is to get you acquainted with the process of &ldquo;how we will code&rdquo; in this class. It DOES NOT focus at all on programming itself. In fact all the code will be written for you. Instead we will focus on the PROCESS of coding.</p>
+<p>We will cover the tools you will use throughout the course such as the <strong>command line / terminal</strong>, <strong>git</strong>, <strong>GitHub</strong>, and <strong>Jupyter Notebook</strong> to write our programs, execute them, then commit your work so your others can view it.</p>
+<p>Upon the completion of this walk-through you should be able to:</p>
+<ol>
+<li>Locate your <strong>Learn-Python</strong> code repository on your computer and open the command line in the repository folder.</li>
+<li>Use Python&rsquo;s Jupyter Notebook environment.</li>
+<li>Write and execute a simple Python program.</li>
+<li>Use <code>git</code> to commit your code changes and push them over the Internet to GitHub.</li>
+<li>View your code changes on the GitHub website. </li>
+</ol>
+<p>After you complete this walk-through you should have a good idea how to work on your code in-class and save your work to GitHub.</p>
+<h3 id="before-you-begin">Before You Begin</h3>
+<p>Before you complete this walk-through you should need to make sure you&rsquo;ve completed the <a href="setup/overview.md">course setup checklist</a>. You cannot complete this walk-through without it! If for some reason you&rsquo;ve haven&rsquo;t completed the course setup checklist (ahem&hellip; shame on you!) then you should do so NOW.</p>
+<p><strong>NOTE:</strong> You cannot complete the lab or homework without first following the <a href="setup/overview.md">course setup checklist</a> to set up your laptop.</p>
+<h2 id="part-2-the-programming-process-l01">Part 2: The Programming Process [L01]</h2>
+<p>In this part we will guide you through the programming process step-by-step. When you are finished with the process you will have completed your first lab, L01, and handed it in to Github for a grade!</p>
+<p>In this walk-through we will simulate your typical workflow when working on labs, recitations, or homework assignments in this course. Specifically we will:</p>
+<ol>
+<li>Open, Edit, and Execute a Python program using <strong>Jupyter Notebook</strong></li>
+<li>Open the command line in our <strong>Learn-Python</strong> git repository</li>
+<li>Save our code changes to <strong>git</strong>, then push them to <strong>GitHub</strong></li>
+<li>View our saved code locally and on the <strong>GitHub</strong> website.</li>
+</ol>
+<h3 id="step-21-open-edit-and-execute-a-python-program-using-jupyter-notebook">Step 2.1: Open, Edit, and Execute a Python program using <strong>Jupyter Notebook</strong></h3>
+<p>The primary tool we will use to program in Python is called <strong><a href="http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html">Jupyter Notebook</a></strong>. This is the preferred development environment of Scientists, Data Analysts, and of course Data Scientists. The notebook environment is beneficial to these disciplines because you can combine instructions with code and intermix visualizations such as tables, map and graphs. Jupyter runs as a mini web server within the Azure Notebooks environment thus all you&rsquo;ll need to write and run your code is a web browser.</p>
+<ol>
+<li>Log on to Azure Notebooks: <a href="https://notebooks.azure.com">https://notebooks.azure.com</a> with your SU email and NetID password. </li>
+<li>From the Azure Notebooks home page select the <strong>IST256</strong> project.</li>
+<li>From the IST256 project page, click the run button (It will probably say &ldquo;Run on free Compute&rdquo;). This will launch the Jupyter Notebooks environment. You can tell the environment has launched as you will see &ldquo;Powered by jupyter&rdquo; at the top of the page.</li>
+<li>Next, we have to navigate to our code. We&rsquo;re in Lesson 01, so we have to find that folder:<ol>
+<li>Click on your Git repository folder.</li>
+<li>Click on the <strong>content</strong> folder.</li>
+<li>Click on the <strong>lessons</strong> folder.</li>
+<li>Click on the <strong>01</strong> folder.</li>
+</ol>
+</li>
+<li>You should now see the folders pertinent to this lesson: <br>
+<img alt="jupyter lesson 01" src="images/jupyter-lesson-01.png" /> <br>
+<strong>NOTE:</strong> There are typically 4 folders per lesson, defined as follows:<ol>
+<li><strong>Watch-Me-Code</strong> This folder contains the code demos as part of lecture day.</li>
+<li><strong>End-To-End-Example</strong> This folder contains the end to end examples as part of lecture day. </li>
+<li><strong>Class-Coding-Lab</strong> This folder contains the class coding lab and supporting files.</li>
+<li><strong>Now-You-Code</strong> This folder contains the homework exercises. One will be worked on during recitation, the other must be finished by the end of the week.</li>
+</ol>
+</li>
+<li>The code we will write is in the <strong>Class-Coding-Lab</strong> folder. Double-click on that folder. You should see the file: <br>
+<img alt="jupyter lesson 02 lab" src="images/jupyter-lesson-01-lab.png" /> <br>
+Files ending with <strong>.ipynb</strong> are Jupyter Notebook files. <br></li>
+<li>Double-click on <strong>CCL-walkthrough.ipynb</strong> to open the notebook file. Notice this opens a new <strong>Tab</strong> in your browser window: <br>
+<img alt="jupyter notebook ccl code" src="images/jupyter-notebook-ccl-code.png" /> <br></li>
+<li>Let&rsquo;s write some code! Click on empty cell beneath the text. It should now be outlined in GREEN. Type the following code in the cell: <code>print("Hello, Python!")</code> your screen should look like this: <br>
+<img alt="hello python" src="images/hello-python.png" /></li>
+<li>To execute the code from the current cell, press <strong>Shift+Enter</strong> or press the play button beneath the menu item named &ldquo;Cell&rdquo;. The code in the cell will execute, and underneath it you will see the output: <br> 
+<img alt="hello python output" src="images/hello-python-output.png" /> <br>
+Jupyter then places you in a new cell where you can write additional code. <br>
+<strong>NOTE:</strong> There are also menu and button options for running code in a cell that you can find by exploring&hellip;</li>
+<li>The next thing to understand about the Jupyter notebook is that it uses a modal editing system. This means that the effect of typing at the keyboard depends on which mode you are in. The two modes are:<ul>
+<li><strong>Edit mode:</strong> Indicated by a green border around one cell. Whatever you type appears as is in that cell. This is how you code.</li>
+<li><strong>Command mode:</strong> The green border is replaced by a Blue and grey border. Key strokes are interpreted as commands — for example, typing <code>l</code> toggles line numbers. </li>
+<li>To switch to command mode from edit mode, hit the <strong>Esc</strong> keyboard</li>
+<li>To switch to edit mode from command mode, hit <strong>Enter</strong> or click in a cell
+The modal behavior of the Jupyter notebook is a little tricky at first but very efficient when you get used to it. In this screenshot, I&rsquo;ve toggle line numbers on for cell with code in it: <br>
+<img alt="line numbers command mode" src="images/line-numbers-command-mode.png" /> <br>
+<strong>PRO TIP:</strong> Need a list of commands? Open the command pallette <img alt="command pallette" src="images/command-pallette.png" /> from the toolbar. It lists all the available commands! What key do you press to save the notebook? Press it now!</li>
+</ul>
+</li>
+<li>Next, Let&rsquo;s paste in some sample code which really shows off the power of Jupyter notebook. This code, taken from <a href="http://matplotlib.org/1.4.1/examples/pie_and_polar_charts/polar_bar_demo.html">http://matplotlib.org/1.4.1/examples/pie_and_polar_charts/polar_bar_demo.html</a> will generate a polar chart of random data. Copy and paste the following code into the cell beneath your <strong>Hello, Python!</strong> program:</li>
+</ol>
+<pre><code>%matplotlib inline
+import numpy as np
+import matplotlib.pyplot as plt
+
+N = 20
+theta = np.linspace(0.0, 2 * np.pi, N, endpoint=False)
+radii = 10 * np.random.rand(N)
+width = np.pi / 4 * np.random.rand(N)
+
+ax = plt.subplot(111, polar=True)
+bars = ax.bar(theta, radii, width=width, bottom=0.0)
+
+for r, bar in zip(radii, bars):
+    bar.set_facecolor(plt.cm.jet(r / 10.))
+    bar.set_alpha(0.5)
+
+plt.show()
+</code></pre>
+
+<p>Don&rsquo;t worry about what this code is doing right now. You&rsquo;ll learn to understand it in time! <br>
+ When you paste and execute the code you should see this: <br>
+ <img alt="jupyter polar chart" src="images/jupyter-polar-chart.png" /> <br>
+ <strong>NOTE:</strong> The chart will be different each time it runs as its based on random data.</p>
+<ol>
+<li>In this final coding step, we will write code to test your Python setup. Type the following code into a new cell below your chart: </li>
+</ol>
+<p><img alt="Testing Your Install The Code" src="images/testing-install.png" /></p>
+<p>We gave you a screen shot of the code this time to force you to type it in! Practice makes perfect!</p>
+<p>If the code executes correctly, you should see the message <strong>This is Working</strong> in the program output. <strong>Working</strong> will be colored green, like this:</p>
+<p><img alt="Install Worked" src="images/install-worked.png" /></p>
+<p><strong>HELP I GOT ERRORS!!!</strong>  If you get an <code>ImportError</code> then you will need to go to another cell and import the missing module. For example, if you are missing <code>matplotlib</code> in the cell you would type:<br />
+<code>!pip3 install --user matplotlib</code> to add the missing bits to Python. Yes there&rsquo;s a <code>!</code> character in frot of the command. This instructs Jupyter notebook to drop down to the command line.</p>
+<h4 id="exiting-your-jupyter-notebook-file">Exiting Your Jupyter Notebook File</h4>
+<p>So you are done with your Jupyter notebook file, so how do we save and close out?</p>
+<ol>
+<li>Save your work. Enter command mode and press <code>s</code> to save.</li>
+<li>Exit the notebook page. From the Jupyter menu select <strong>File</strong> then <strong>Close and Halt</strong>: <br>
+ <img alt="jupyter close and halt" src="images/jupyter-close-and-halt.png" />  </li>
+</ol>
+<p><strong>NOTE:</strong> It is important to exit the notebook file this way or else it will continue to run in the background.  This will slow down other notebooks you attempt to run!</p>
+<h3 id="step-22-opening-the-command-line-in-your-learn-python-git-repository">Step 2.2: Opening the command line in your Learn-Python git repository.</h3>
+<p>You will need to commit your code changes and send them to GitHub for grading. In order to do this, you must open up the command line (linux terminal) in your git repository folder.</p>
+<p><strong>YOU NEED TO KNOW HOW TO DO THIS IN YOUR SLEEP WITH HANDS TIED BEHIND YOUR BACK.</strong></p>
+<ol>
+<li>From the Azure Notebook homepage <a href="https://notebooks.azure.com">https://notebooks.azure.com</a>, select the <strong>IST256</strong> project from the <em>My Projects</em> workspace. </li>
+<li>Click the <strong>Terminal</strong> icon to launch the terminal. This will give you access to the command line.<br />
+When the terminal launches you should see a command line with the prompt <code>nbuser@nbserver:~$</code> </li>
+<li>Switch the current working directory to the <code>library</code> folder by typing: <br />
+<code>cd ~/library</code> </li>
+<li>Your command prompt should now read: <code>nbuser@nbserver:~/library$</code><br />
+Next you need to switch into the local copy of your Git reposiotry folder. This will likely begin with the year and semester you&rsquo;re taking the course e.g. <code>2019-fall-learn-python-mafudge-su</code>. For example, I would type: <code>cd 2019-fall-learn-python-mafudge-su</code>. The easiest way to find your folder is to type: <code>cd</code> then type the year you&rsquo;re taking the course, then press the TAB key and the teriminal will complete the rest for you!</li>
+<li>Verify you are in the correct folder by typing:<br />
+<code>git status</code><br />
+  * If you are in the correct folder, you should see <code>on branch master</code> in the first part of the command output.<br />
+  * If you are NOT in the correct folder, you will see <code>fatal: not a git repository</code> in the first part of the command output.</li>
+</ol>
+<h3 id="step-23-save-our-code-changes-to-git-then-push-them-to-github">Step 2.3: Save our code changes to <strong>git</strong>, then push them to <strong>GitHub</strong></h3>
+<p>During this walk-through we&rsquo;ve made changes to the file: <strong>CCL-walkthrough.ipynb</strong>. Those changes are saved in Azure Notebooks, but how do we share them with our Professor? We&rsquo;ll walk-through this process next.</p>
+<ol>
+<li>From the terminal you opened in the previous step: </li>
+<li>We&rsquo;ve made some changes, let&rsquo;s see what <strong>git</strong> has to say about them. <br>
+Type: <code>git status</code> <br>
+to check the state of our repository. The output should look something like this:<br>
+<img alt="new git status" src="images/new-git-status.png" /> <br>
+Git tells us we have changes which are <strong>not staged for commit</strong>. This means we&rsquo;ve made changes and git doesn&rsquo;t know about them yet.</li>
+<li>You must tell git which changes to files you want to commit. This is called <em>staging</em> the commit.<br />
+Let&rsquo;s tell git to stage <em>all</em> the changed files in the repository folder.<br />
+Type: <code>git add --all</code><br />
+99% of the time this is what we want.  </li>
+<li>Let&rsquo;s check the status of the repository now that we&rsquo;ve staged our files.<br />
+Type: <code>git status</code><br />
+again to see what&rsquo;s happening in our repository.<br />
+<img alt="git status modified" src="images/git-status-modified.png" /><br />
+Now git tells us the files we&rsquo;ve changed are now ready <strong>to be committed</strong>.</li>
+<li>Let&rsquo;s commit the changes to git. What does this mean exactly?<br />
+<strong>Git Commit Explained:</strong> When you commit files, you&rsquo;re saving the <em>history</em> of them to git repository. It&rsquo;s like taking a snapshot of your repository folders&rsquo; contents at that point in time. Because you have this snapshot you are able to revert the files back to this point whenever you desire. As you can imagine, this is an extremely useful feature for programming teams who are making changes (good <em>and</em> bad) to their code. Think of the commit as an insurance policy: You <em>hope</em> you never need to use it, but it&rsquo;s there for you <em>just in case you do</em>! Whenever we commit we should should add a message: something to remind us of the changes we&rsquo;ve made. This is helpful in the event you need to cash in on that insurance policy! <br>
+Enough talk. Time to commit our changes. <br />
+Type: <code>git commit -m "Completed programming walk through lab"</code> <br />
+<strong>NOTE:</strong> The <code>-m</code> represents the message part of the commit.<br />
+<img alt="git commit" src="images/git-commit.png" /> <br>
+The output says there we 1 files changed, and 56 insertions, meaning we added 56 lines of code since the last commit. Yes, git makes managing your team easy because it tracks not only <em>who worked on what</em> but also <em>quantifies their contributions</em>.  Your information may vary slightly, of course.</li>
+<li>Let&rsquo;s check the status of the repository files now.<br />
+Type: <code>git status</code><br />
+<img alt="git status committed" src="images/git-status-committed.png" /> <br />
+Now our local branch is <strong>ahead of &lsquo;origin/master&rsquo; by 1 commit.</strong> This tells us our local git repository is <em>newer</em> than our remote copy on GitHub. We also have <strong>nothing to commit</strong> meaning our files are in sync with our local copy of git. This makes sense: we just committed!</li>
+<li>The last step in the process is to sync up our local copy of git commits with on GitHub. Before we do that let&rsquo;s explain the process.<br />
+The status message says <strong>Your branch is ahead of &lsquo;origin/master&rsquo; by 1 commit</strong>. What exactly does this mean? Well, when we initially <strong>cloned</strong> the repository off GitHub, it made two versions of the repository. One is still on GitHub (git calls this one <strong>&lsquo;origin/master&rsquo;</strong>) the other is on your computer. When the two repositories get out-of-sync, we can reconcile them in two ways:<ul>
+<li>When the the local branch is <strong>ahead of &lsquo;origin/master&rsquo;</strong> we need to execute a <strong>push</strong> to synchronize the two repositories, re-playing the local commits remotely on GitHub.</li>
+<li>When the the local branch is <strong>behind &lsquo;origin/master&rsquo;</strong> we need to execute a <strong>pull</strong> to synchronize the two repositories, re-playing the commits on GitHub in our local repository. </li>
+</ul>
+</li>
+<li>Since we&rsquo;re <strong>ahead</strong> we should <strong>push</strong>.<br />
+Type: <code>git push origin master</code><br />
+You should see output similar to the following: (again your message might be different depending on what was changed)<br />
+<img alt="git push origin master" src="images/git-push-origin-master.png" /></li>
+<li>An one final check of the repository status:<br />
+Type: <code>git status</code> <br />
+<img alt="git status" src="images/wt-git-status.png" /><br />
+Which is the same status from the beginning of the walk-through! It tells us nothing has changed locally and what we have here is now in sync with GitHub.</li>
+</ol>
+<p><strong>IMPORTANT: You&rsquo;ll execute step 2.3 <em>every time you code</em>.</strong>  </p>
+<p>You should get in the habit of following this procedure after each coding session. Class is over? commit code and push to GitHub. Work on your homework for an hour? commit your code and push to GitHub. Not only will it record your changes for you in the event you need to <em>undo a change</em>, but it also <em>backs up your work</em> to the cloud in the event that work has a problem or becomes lost / broken! It&rsquo;s great insurance against disasters and its <em>so, so easy to do</em>. You can push the same assignment multiple times. We professors will always look as the latest version!</p>
+<h3 id="step-24-visualizing-your-commits-on-github">Step 2.4: Visualizing your commits on GitHub</h3>
+<p>Once you get rolling with a few commits it might be useful to look back at the history of changes you&rsquo;ve made. Let&rsquo;s demonstrate that locally and on GitHub.</p>
+<ol>
+<li>Open your repository website on <a href="https://github.com">https://github.com</a>. If you don&rsquo;t remember what it is from the command line in your local repository <br>
+type: <code>git remote -v</code>  <br>
+to display it.</li>
+<li>From the GitHub repository Website, select <strong>commits</strong> <br>
+<img alt="github repository website" src="images/github-repository-website.png" /></li>
+<li>From the commits page, select the commit for which you would like to view the changes <br>
+<img alt="github history" src="images/github-history.png" /> <br>
+In this example you want to select the commit with message  <strong>Completed programming walk through lab</strong></li>
+<li>You will then see a web of all the files changed in that commit. In this example we should see the file <strong>CCL-walkthrough.ipynb</strong>. <ul>
+<li>On the left is the file before the commit</li>
+<li>On the right is the file after the commit</li>
+<li>Github uses the familiar  <strong>red/green</strong> and <code>+ / -</code> syntax as <strong>gitk</strong></li>
+</ul>
+</li>
+</ol>
+<p><img alt="github commit files" src="images/github-commit-files.png" /></p>
+<h2 id="part-3-on-your-own-h01">Part 3: On Your Own [H01]</h2>
+<p>Next, we will walk you through a typical homework assignment. Since we&rsquo;ve focused on committing work to with git already, in this part we will emphasize how go about completing homework. </p>
+<p>Similar to the labs, the homework assignments can be found in your git repository folder and you code the solution in Jupyter notebook.</p>
+<h3 id="getting-started">Getting Started</h3>
+<ol>
+<li>Open the following file in Jupyter Notebook: <strong>lessons/01/Now-You-Code/NYC1-walkthrough.ipynb</strong></li>
+<li>This homework assignment is similar to all the others. It consists of several sections: problem definition, problem analysis, section to write code, and some questions which encourage you to think laterally. Each of these sections should be completed before you hand in a homework assignment. At the bottom of the homework is a reminder of how the homework is evaluated. Use this to make sure you&rsquo;re achieving the highest grade possible for your efforts. </li>
+</ol>
+<h3 id="step-1-problem-analysis">Step 1: Problem Analysis</h3>
+<p>Before we can solve a problem with computer code, we must first <em>understand the problem itself</em>. This is an essential and often overlooked aspect of computer programming. Programming provides vast resources at your disposal, but unless you can combine them into a coherent solution they are not much use.</p>
+<p>A good way to analyze a programming problem is with the input-process-output model. In this model we identify the inputs into the program, the expected outputs based on those inputs and then we write down the steps (the algorithm) to get from input to output. </p>
+<p>Your algorithm, or steps should NOT be in any programming language. They should be written as atomic steps in a natural language. To become a good algorithm writer takes practice. It seems foreign at first but like anything the more you do it the more natural it becomes.</p>
+<p>Let&rsquo;s complete the problem analysis section together:</p>
+<ol>
+<li>Double click on the <strong>Problem analysis</strong> section to edit the markdown. When you&rsquo;re in edit mode it looks like this:
+<img alt="Problem Analysis" src="images/NYC1-problem-analysis-edit.png" /></li>
+<li>Add the following to the markdown, outlining the inputs, output, and process for this program. Again, this is a common problem solving approach. <img alt="Problem Analysis" src="images/NYC1-problem-analysis-edit-done.png" />  </li>
+<li>When you are finished press <code>SHIFT+ENTER</code> to execute the cell and save your documentation.<br />
+<img alt="Problem Analysis" src="images/NYC1-problem-analysis-saved.png" />  </li>
+</ol>
+<p><strong>NOTE:</strong> For more complicated homeworks, you might spend an hour or so just thinking about your approach to the problem. I encourage you to do this &ldquo;off line.&rdquo; Most people are better problem solvers without the distractions of music, a computer, or background noise. Give yourself a chance in isolation to think about the problem deeply! You&rsquo;ll be surprised how productive it can be!</p>
+<h3 id="step-2-write-code">Step 2: Write code</h3>
+<p>Now that we&rsquo;ve outlined the problem and formally laid out a plan for writing the program, we can move on to writing our code. If you&rsquo;re doing it right, this step is merely taking each line in your algorithm and asking yourself, &ldquo;How do I translate this into Python.&rdquo; When you&rsquo;re doing it wrong, such as coding without a problem analysis, then this step will be painfully frustrating.</p>
+<p>Let&rsquo;s complete the code section together:</p>
+<ol>
+<li>Next, move into the code cell:<br />
+<img alt="Problem Analysis" src="images/NYC1-code.png" />  </li>
+<li>And write the Python program:</li>
+</ol>
+<pre><code>print(&quot;Python Check Divider&quot;)
+people = int(input(&quot;How many people are dining? &quot;))
+check_total = float(input(&quot;What is the total amount of the check? &quot;))
+contribution = check_total / people
+print(&quot;Each person should contribute&quot;, contribution, &quot;dollars.&quot;)
+</code></pre>
+
+<ol>
+<li>When you are finished the cell should look like this:<br />
+<img alt="Problem Analysis" src="images/NYC1-code-done.png" />  </li>
+<li>Press <code>SHIFT+ENTER</code> to execute the code. Try the same inputs as in the example run at the top. Do you get the same outputs?
+<img alt="Problem Analysis" src="images/NYC1-code-exec.png" />  </li>
+<li>Execute the program a few more times, trying different inputs and verifying the outputs the program gives you match those you would expect. For example a $20 check split with 2 people should be $10 each. Is it? You&rsquo;ll have to &ldquo;play computer&rdquo; and figure out the outputs yourself. This is a key activity of good programmers - never &ldquo;assume&rdquo; the computer code is correct, &ldquo;prove&rdquo; it&rsquo;s correct! In fact really good programmers write <em>code</em> to prove their code is correct, a process known as <strong>automated testing</strong>.</li>
+</ol>
+<p><strong>NOTE:</strong> Usually, it will take you several iterations of the previous 2 steps before your program is &ldquo;done&rdquo;. Why? Most problems are non-trivial and you are learning how to become a problem solver. Sometimes you won&rsquo;t know your original plan is crap until you write code and run it. DO NOT get discouraged by this! Each failure is a lesson which helps us become a better, more experienced programmer. In fact the end result of any working program Facebook to Angry Birds is the culmination of a mountain of failures, dead-ends, and small victories en-route to a feature-complete application. This is what makes programming so frustrating yet gratifying at the same time. Learn to embrace failure and work it to your advantage!</p>
+<h3 id="step-3-questions">Step 3: Questions</h3>
+<p>After you&rsquo;ve completed the program you should answer the questions in the questions section. These are designed to &ldquo;get you thinking&rdquo; about the problem and test the flexibility of your solution. The questions usually focus on edge cases and potential pitfalls students may not have considered as they completed the homework. Completing them offers valuable insight into the program and ways to make it better. Many student go back and improve their program after answering the questions in an effort to score as high as possible on the homework. </p>
+<ol>
+<li>Edit the Questions cell and provide an answer to each question underneath the question itself. Since every student&rsquo;s answer will be different I did not include a screenshot this time. </li>
+<li>You may have to run the program to answer some of the questions. Make sure you click off the question cell and back into the code cell to run the program!</li>
+</ol>
+<p><strong>NOTE:</strong> It is important to answer the questions in your own words, honestly and truthfully. We expect each student will answer these questions differently!</p>
+<h3 id="finishing-up">Finishing Up</h3>
+<p>When your homework is complete, you should save your work and commit the changes to Github so that your professor can grade it.</p>
+<ol>
+<li>When you are confident the program is correct you are finished writing the program. Save your changes and exit Jupyter notebook.</li>
+<li>Add your change to your local git repository.</li>
+<li>Commit your change with the message &ldquo;Completed NYC 1 walkthough&rdquo;</li>
+<li>Push your code to Github.</li>
+<li>Wait a minute, then verify your code, including proof it was executed via the program output is on the Github website.<br />
+<img alt="Problem Analysis" src="images/NYC1-code-github.png" />  </li>
+</ol>
+<p>At this point your homework has been turned in, and your professor should be able to grade it and determine whether you completed it on time, by checking the timestamp of your commit.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>&copy; 2020 Michael Fudge</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/readthedocs.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

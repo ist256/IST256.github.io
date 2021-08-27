@@ -1,0 +1,23 @@
+write-host "Installing Python"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+wget https://www.python.org/ftp/python/3.6.6/python-3.6.6-amd64.exe -OutFile python-3.6.6-amd64.exe
+.\python-3.6.6-amd64.exe /passive InstallAllUsers=0 PrependPath=1 SimpleInstall=1 | Out-Null
+
+# Reload Path
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
+python --version
+python  -c "print('YAY! Python is installed!')"
+
+write-host "Installing Python Modules"
+python -m pip install --upgrade pip
+pip install --upgrade ipython jupyter jupyterlab setuptools wheel
+pip install -U geocoder lxml terminado numpy scipy requests
+pip install -U pandas matplotlib plotly cufflinks folium bs4
+pip freeze
+
+write-host "Installing Git"
+wget https://github.com/git-for-windows/git/releases/download/v2.18.0.windows.1/Git-2.18.0-64-bit.exe -OutFile git-2.18.0-64-bit.exe
+./git-2.18.0-64-bit.exe /SILENT | Out-Null
+# Reload Path
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
+git --version
