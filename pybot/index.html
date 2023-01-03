@@ -68,6 +68,20 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">PyBot</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-the">What the @#%!?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#invoking-the-pybot">Invoking the PyBot</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#does-this-make-programming-irrelevant">Does this make programming irrelevant?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#is-this-magic-how-does-it-do-this">Is this magic? How does it do this!?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#can-i-really-use-this-in-my-homework-and-project-is-this-cheating">Can I REALLY use this in my homework and project? Is this cheating?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#some-final-thoughts">Some final thoughts:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#acknowledgements">Acknowledgements</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -102,8 +116,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="pybot-your-ai-tutor-in-this-course">PyBot Your AI Tutor in this course</h1>
-<p>The Jupyter Hub programming environment <a href="https://hub.ischool.syr.edu">https://hub.ischool.syr.edu</a> includes an AI programming assistant for your use. This assistant is based on the OpenAI GPT models</p>
+                <h1 id="pybot-your-ai-tutor-in-this-course">PyBot: Your AI Tutor in this course</h1>
+<p>By: Michael Fudge</p>
+<h2 id="what-the">What the @#%!?</h2>
+<p>This course includes an a free AI programming assistant for your use. I programmed the assistant over the 2022-2023 winter break and it makes heavy use of the <a href="https://openai.com/">OpenAI</a> GPT-3 model, which has been popularized recently by chat-GPT phenomenon <a href="https://openai.com/blog/chatgpt/">https://openai.com/blog/chatgpt/</a>. We use a special version of GPT-3 that is optimized for programming, called <strong>codex</strong> <a href="https://openai.com/blog/openai-codex/">phttps://openai.com/blog/openai-codex/</a>.</p>
+<p><strong>I created created the assistant for a single purpose: to study whether these technologies impact how students learn computer programming.</strong></p>
+<p>The assistant is called PyBot and is available only within our Jupyter Hub environment <a href="https://hub.ischool.syr.edu">https://hub.ischool.syr.edu</a>. You are welcome to use PyBot to help you with any coding tasks, including your homework and project. Think of PyBot as an always available Python tutor. </p>
+<h2 id="invoking-the-pybot">Invoking the PyBot</h2>
+<p>The bot was implemented as a Jupyter magic. To use it, simply type the following command in an empty code cell:</p>
+<pre><code>%%pybot 
+
+{{your prompt here}}
+</code></pre>
+<p>The <code>%%</code> is a special code to invoke the magic. The <code>pybot</code> is the name of the magic. The <code>{{your prompt here}}</code> is the prompt.</p>
+<p>What exactly is a prompt? It is a question or statement that you would like the bot to answer. For example, you might type:</p>
+<pre><code>%%pybot
+
+write a computer program to input a temperature in Celsius and output the temperature in Fahrenheit
+</code></pre>
+<p>To which PyBot will respond with the following code:</p>
+<pre><code class="language-python">#AI-Generated Output (Tokens: prompt=20, output=47, over_max=False)
+celsius = float(input(&quot;Enter the temperature in Celsius: &quot;))
+fahrenheit = (celsius * 9/5) + 32
+print(&quot;The temperature in Fahrenheit is: &quot;, fahrenheit)
+</code></pre>
+<p>And in <strong>this case</strong> the code the bot gave us works!</p>
+<pre><code>Enter the temperature in Celsius: 100
+The temperature in Fahrenheit is:  212.0
+</code></pre>
+<h2 id="does-this-make-programming-irrelevant">Does this make programming irrelevant?</h2>
+<p>No! Consider PyBot is only a tool, the next evolution in computer programming. It helps you to accomplish a programming task. </p>
+<ul>
+<li>Ultimately you must understand the concepts well enough to to explain to the bot how to produce relevant code.</li>
+<li>Also you must be able to read code well enough to verify the code the bot produces is correct! </li>
+<li>In some cases you may need to modify the code the bot produces to make it work in your specific context.</li>
+<li>The bot can solve simple problems, but it will be on you to solve more complex problems from the pieces the bot provides.</li>
+</ul>
+<h2 id="is-this-magic-how-does-it-do-this">Is this magic? How does it do this!?</h2>
+<p>For that, I suggest reading this blog post on OpenAI codex: <a href="https://openai.com/blog/openai-codex/">https://openai.com/blog/openai-codex/</a></p>
+<h2 id="can-i-really-use-this-in-my-homework-and-project-is-this-cheating">Can I <strong>REALLY</strong> use this in my homework and project? Is this cheating?</h2>
+<p>Its not cheating if you <strong>cite your sources!!!</strong>.  If the bot helped you with your homework or project you do do the following:</p>
+<ul>
+<li>Leave any prompts (notebook cells where you invoked the bot) in your notebook.</li>
+<li>Leave the code the bot produced in your notebook. AS-IS!</li>
+<li>When you write your solution, use the bot&rsquo;s code in a separate cell, preserving the bot&rsquo;s output.</li>
+<li>Mention how you use the bot in your reflection. Was it helpful? What did you learn from using it?</li>
+</ul>
+<h2 id="some-final-thoughts">Some final thoughts:</h2>
+<ul>
+<li>Yes, it&rsquo;s a Python course, but really is a course in <strong>computational thinking</strong>.</li>
+<li>You should learn to code and PyBot should make you <em>smarter</em> not <em>dumber</em>.</li>
+<li>PyBot is not a replacement for YOU. It is a tool to help you. </li>
+<li>Don&rsquo;t trust your evil AI overlords; think for yourself.</li>
+</ul>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Many thanks to <a href="https://openai.com/">OpenAI</a> for making this several hours of compute available for use in our course.</p>
               
             </div>
           </div><footer>
