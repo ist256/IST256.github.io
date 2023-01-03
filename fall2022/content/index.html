@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Content - IST256</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/readthedocs.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Content";
+        var mkdocs_page_input_path = "content.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYX1X36VY3"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WYX1X36VY3');
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> IST256
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../syllabus/">Syllabus</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Content</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-01-introduction">Lesson 01: Introduction</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-02-variables">Lesson 02: Variables</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_1">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_1">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_1">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_1">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_1">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_1">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-03-conditionals">Lesson 03: Conditionals</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_2">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_2">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_2">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_2">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_2">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_2">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-04-iterations">Lesson 04: Iterations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_3">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_3">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_3">Large Group Video Lecture</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#the-recording-from-yesterday-did-not-take-so-here-is-one-from-last-semester">THE RECORDING FROM YESTERDAY DID NOT TAKE, SO HERE IS ONE FROM LAST SEMESTER</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_3">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_3">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_3">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-05-functions">Lesson 05: Functions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_4">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_4">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_4">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_4">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_4">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_4">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-06-strings">Lesson 06: Strings</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_5">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_5">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_5">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_5">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_5">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_5">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-07-files">Lesson 07: Files</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_6">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_6">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_6">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_6">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_6">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_6">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-08-lists">Lesson 08: Lists</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_7">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_7">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_7">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_7">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_7">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_7">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-09-dictionaries">Lesson 09: Dictionaries</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_8">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_8">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_8">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_8">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_8">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_8">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-10-http">Lesson 10: HTTP</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_9">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_9">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_9">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_9">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_9">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_9">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-11-web-apis">Lesson 11: Web API's</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_10">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_10">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_10">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_10">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_10">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_10">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-12-pandas">Lesson 12: Pandas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_11">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_11">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_11">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_11">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_11">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_11">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lesson-13-visualization">Lesson 13: Visualization</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview_12">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-reading-viewing_12">Required Reading / Viewing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#large-group-video-lecture_12">Large Group Video Lecture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lab-walk-through_12">Lab Walk Through</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#homework-advice_12">Homework Advice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-resources_12">More Resources</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../links/">Course Links</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="https://teams.ist256.com">Questions?</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">IST256</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Content</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="content">Content</h1>
+<h2 id="lesson-01-introduction">Lesson 01: Introduction</h2>
+<h3 id="overview">Overview</h3>
+<p>This lesson we learn:</p>
+<ul>
+<li>What is Python? What are the advantages / disadvantages of the language? How does it compare with other programming languages?</li>
+<li>The Jupyter Notebook environment.  How to execute programs from the Jupyter environment.</li>
+<li>Python programming language basics. Print, Assignment and Input statements.</li>
+<li>Writing simple programs in Python following the Input / Process / Output model.</li>
+</ul>
+<h3 id="required-reading-viewing">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 1: Introduction](https://learn.zybooks.com)   -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/01-intro.html">Severance Ch 1: Introduction</a></li>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/jZ952vChhuI">Quick Introduction to Jupyter Notebook, by Michael Fudge</a></li>
+</ul>
+<h3 id="large-group-video-lecture">Large Group Video Lecture</h3>
+<!-- [![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_4v3ces7e/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_4v3ces7e) -->
+
+<h3 id="lab-walk-through">Lab Walk Through</h3>
+<p><a href="https://youtu.be/jUXoz-rKWEQ"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/jUXoz-rKWEQ/0.jpg" /></a></p>
+<h3 id="homework-advice">Homework Advice</h3>
+<p><a href="https://youtu.be/QLsMdSw3HU8"><img alt="Homework Advice" src="https://img.youtube.com/vi/QLsMdSw3HU8/0.jpg" /></a></p>
+<h3 id="more-resources">More Resources</h3>
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://medium.freecodecamp.org/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2">How to think like a programmer - Lessons in problem solving</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody: <a href="https://youtu.be/fvhNadKjE8g">Ch1 Part 1</a> | <a href="https://youtu.be/VQZTZsXk8sA">Part 2</a>  | <a href="https://youtu.be/LLzFNlCjTSo">Part 3</a> | <a href="https://youtu.be/gsry2SYOFCw">Part 4</a>, by Charles Severance</li>
+<li><i class="fa fa-video-camera"></i> <a href="https://www.youtube.com/watch?v=xfBWk4nw440">&ldquo;TEDxSMU: You Should Learn to Program&rdquo;, by Christian Genco</a></li>
+<li><i class="fa fa-video-camera"></i> <a href="https://www.youtube.com/watch?v=-jRREn6ifEQ">&ldquo;TEDxCERN: The poetry of programming&rdquo;, by Linda Liukas</a></li>
+</ul>
+<h2 id="lesson-02-variables">Lesson 02: Variables</h2>
+<h3 id="overview_1">Overview</h3>
+<p>This lesson we learn:</p>
+<ul>
+<li>What is a variable? What is its purpose?</li>
+<li>Variable assignment, and access.</li>
+<li>Different data types for variables.</li>
+<li>How to input variables of various types, check types, convert types, and print variables with formatting.</li>
+<li>Arithmetic expressions, arithmetic operators, and operands.</li>
+<li>Different ways to format output.</li>
+</ul>
+<h3 id="required-reading-viewing_1">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 2: Variables And Types](https://learn.zybooks.com) -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/02-variables.html">Severance Ch 2: Variables, Expressions, Statements</a></li>
+</ul>
+<h3 id="large-group-video-lecture_1">Large Group Video Lecture</h3>
+<p>This is a pre-recorded lecture from last spring.</p>
+<p><a href="https://video.syr.edu/media/t/1_b6sxyo68"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_b6sxyo68/version/100011/width/970/height/575" /></a></p>
+<h3 id="lab-walk-through_1">Lab Walk Through</h3>
+<p><a href="https://youtu.be/YRbh6MWUjKE"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/YRbh6MWUjKE/0.jpg" /></a></p>
+<h3 id="homework-advice_1">Homework Advice</h3>
+<p><a href="https://youtu.be/ML-UCIWEAks"><img alt="Homework Advice" src="https://img.youtube.com/vi/ML-UCIWEAks/0.jpg" /></a></p>
+<h3 id="more-resources_1">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/ZZQa2Avm2YE">End to End Example: Variables and Types, by Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody: <a href="https://youtu.be/7KHdV6FSpo8">Ch2 Part 1</a> | <a href="https://youtu.be/kefrGMAglGs">Part 2</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-03-conditionals">Lesson 03: Conditionals</h2>
+<h3 id="overview_2">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>How to make our code execute in a non linear fashion through the use of conditionals.</li>
+<li>Relational and logical operators for making Boolean expressions which form the basis of our decisions. </li>
+<li>Different types of non-linear execution like conditional execution, alternative execution, chaining, and nesting, and their appropriate uses. </li>
+<li>How to handle run-time errors with try..except.</li>
+</ul>
+<h3 id="required-reading-viewing_2">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 3: Conditionals](https://learn.zybooks.com) -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/03-conditional.html">Severance Ch 3: Conditional Execution</a> </li>
+</ul>
+<h3 id="large-group-video-lecture_2">Large Group Video Lecture</h3>
+<p><a href="https://video.syr.edu/media/t/1_rh3lqmvn"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_rh3lqmvn/version/100011/width/970/height/575" /></a> </p>
+<h3 id="lab-walk-through_2">Lab Walk Through</h3>
+<p><a href="https://youtu.be/heJ-6ji332E"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/heJ-6ji332E/0.jpg" /></a></p>
+<h3 id="homework-advice_2">Homework Advice</h3>
+<p><a href="https://youtu.be/O3vh1r5Efbg"><img alt="Homework Advice" src="https://img.youtube.com/vi/O3vh1r5Efbg/0.jpg" /></a></p>
+<h3 id="more-resources_2">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/ZwbOSDqIrx4">End to End Example: Conditionals, By Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody: <a href="https://youtu.be/2aA3VBdcl6A">Ch3 Part 1</a> | <a href="https://youtu.be/OczkNrHPBps">Part 2</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-04-iterations">Lesson 04: Iterations</h2>
+<h3 id="overview_3">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>How to make our code execute in a non linear fashion through the use of iterations, or loops.</li>
+<li>The while loop for indefinite looping, infinite loops, and the break and continue statements</li>
+<li>How to build complex loops easily.</li>
+<li>Definite loops (for loops) and iterators.</li>
+</ul>
+<h3 id="required-reading-viewing_3">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 4: Iterations](https://learn.zybooks.com) -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/05-iterations.html">Severance Ch 5: Iterations</a></li>
+</ul>
+<h3 id="large-group-video-lecture_3">Large Group Video Lecture</h3>
+<h4 id="the-recording-from-yesterday-did-not-take-so-here-is-one-from-last-semester">THE RECORDING FROM YESTERDAY DID NOT TAKE, SO HERE IS ONE FROM LAST SEMESTER</h4>
+<p><a href="https://video.syr.edu/media/t/1_u3icnxc8"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_u3icnxc8/version/100011/width/970/height/575" /></a></p>
+<h3 id="lab-walk-through_3">Lab Walk Through</h3>
+<p><a href="https://youtu.be/qiQYbAxJTds"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/qiQYbAxJTds/0.jpg" /></a></p>
+<h3 id="homework-advice_3">Homework Advice</h3>
+<p><a href="https://youtu.be/dTasdLouiak"><img alt="Homework Advice" src="https://img.youtube.com/vi/dTasdLouiak/0.jpg" /></a></p>
+<h3 id="more-resources_3">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/8xr8boE79hU">End to End Example: Iterations, by Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody: <a href="https://youtu.be/FzpurxjwmsM">Ch5 Part 1</a> | <a href="https://youtu.be/5QDrj5ogPYc">Part 2</a>  | <a href="https://youtu.be/xsavQp8hd78">Part 3</a>  | <a href="https://youtu.be/yjlMMwf9Y5I">Part 4</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-05-functions">Lesson 05: Functions</h2>
+<h3 id="overview_4">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>How to use and discover other functions in modules.</li>
+<li>How to inspect module contents and get help on functions. </li>
+<li>The anatomy of custom functions: arguments, named arguments, return values</li>
+<li>How to modularize our code with custom functions.</li>
+</ul>
+<h3 id="required-reading-viewing_4">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 5 Functions](https://learn.zybooks.com)  -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/04-functions.html">Severance Ch 4: Functions</a></li>
+</ul>
+<h3 id="large-group-video-lecture_4">Large Group Video Lecture</h3>
+<p><a href="https://video.syr.edu/media/t/1_dvnp9xtc"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_dvnp9xtc/version/100011/width/970/height/575" /></a></p>
+<h3 id="lab-walk-through_4">Lab Walk Through</h3>
+<p><a href="https://youtu.be/3gLyp9KUFB4"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/3gLyp9KUFB4/0.jpg" /></a></p>
+<h3 id="homework-advice_4">Homework Advice</h3>
+<p><a href="https://youtu.be/0hJjqlkItXg"><img alt="Homework Advice" src="https://img.youtube.com/vi/0hJjqlkItXg/0.jpg" /></a></p>
+<h3 id="more-resources_4">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/9lj1kgQdZSg">End to End Example: Functions, by Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody: <a href="https://youtu.be/5Kzw-0-DQAk">Ch4 Part 1</a> | <a href="https://youtu.be/AJVNYRqn8kM">Part 2</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-06-strings">Lesson 06: Strings</h2>
+<h3 id="overview_5">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>Strings as an immutable sequence of characters.</li>
+<li>Index and Slice notation for retrieving sub-strings.</li>
+<li>Built-in string functions to perform operations on strings.</li>
+<li>Techniques for parsing and tokenizing string data.</li>
+<li>How to sanitize input with string functions.</li>
+</ul>
+<h3 id="required-reading-viewing_5">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 6: Strings](https://learn.zybooks.com)   -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/06-strings.html">Severance Ch 6: Strings</a></li>
+</ul>
+<h3 id="large-group-video-lecture_5">Large Group Video Lecture</h3>
+<p><a href="https://video.syr.edu/media/t/1_pxi5pz9a"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_pxi5pz9a/version/100011/width/970/height/575" /></a></p>
+<h3 id="lab-walk-through_5">Lab Walk Through</h3>
+<p><a href="https://youtu.be/StVUoVsi_NI"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/StVUoVsi_NI/0.jpg" /></a></p>
+<h3 id="homework-advice_5">Homework Advice</h3>
+<p><a href="https://youtu.be/1Gnv6KYbWb4"><img alt="Homework Advice" src="https://img.youtube.com/vi/1Gnv6KYbWb4/0.jpg" /></a></p>
+<h3 id="more-resources_5">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/5ONnMc0rw_k">End to End Example: Strings, by Michael Fudge</a></li>
+<li>Python for Everybody: <a href="https://youtu.be/dr98iM4app8">Ch6 Part 1</a> | <a href="https://youtu.be/bIFpJ-qZ3Cc">Part 2</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-07-files">Lesson 07: Files</h2>
+<h3 id="overview_6">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>The importance of a persistence layer in programming.</li>
+<li>How to read, write, and append to files.</li>
+<li>Techniques for reading a file a line at a time and all at once.</li>
+<li>Using exception handling with files.</li>
+<li>Text encodings.</li>
+</ul>
+<h3 id="required-reading-viewing_6">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 7: Files](https://learn.zybooks.com)   -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/07-files.html">Severance Ch 7: Persistence</a></li>
+</ul>
+<h3 id="large-group-video-lecture_6">Large Group Video Lecture</h3>
+<p><a href="https://video.syr.edu/media/t/1_2j9udys4"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_2j9udys4/version/100011/width/970/height/575" /></a></p>
+<h3 id="lab-walk-through_6">Lab Walk Through</h3>
+<p><a href="https://youtu.be/NiZsQ7GJqlU"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/NiZsQ7GJqlU/0.jpg" /></a></p>
+<h3 id="homework-advice_6">Homework Advice</h3>
+<p><a href="https://youtu.be/WKb5fKDn_Nc"><img alt="Homework Advice" src="https://img.youtube.com/vi/WKb5fKDn_Nc/0.jpg" /></a></p>
+<h3 id="more-resources_6">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/s-1ToO0dJIs">End to End Example: Files, by Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody: <a href="https://youtu.be/9KJ-XeQ6ZlI">Ch7 Part 1</a> | <a href="https://youtu.be/0t4rvnySKR4">Part 2</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-08-lists">Lesson 08: Lists</h2>
+<p>In this lesson we learn:</p>
+<ul>
+<li>Lists as a mutable sequence of values.</li>
+<li>Indexing list values; slice notation.</li>
+<li>List functions and operations like add, remove, update, find</li>
+<li>Common patterns for list management.</li>
+<li>Parsing file data into lists.</li>
+</ul>
+<h3 id="overview_7">Overview</h3>
+<h3 id="required-reading-viewing_7">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 8: Lists](https://learn.zybooks.com)   -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/08-lists.html">Severance Ch 8: Lists</a></li>
+</ul>
+<h3 id="large-group-video-lecture_7">Large Group Video Lecture</h3>
+<p><a href="https://video.syr.edu/media/t/1_r9bxqk91"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_r9bxqk91/version/100011/width/970/height/575" /></a> </p>
+<h3 id="lab-walk-through_7">Lab Walk Through</h3>
+<p><a href="https://youtu.be/0sYoK726RRc"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/0sYoK726RRc/0.jpg" /></a></p>
+<h3 id="homework-advice_7">Homework Advice</h3>
+<p><a href="https://youtu.be/eGnkG9Cpgvg"><img alt="Homework Advice" src="https://img.youtube.com/vi/eGnkG9Cpgvg/0.jpg" /></a></p>
+<h3 id="more-resources_7">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/X8QJhDTuffs">End to End Example: Lists, by Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody: <a href="https://youtu.be/ljExWqnWQvo">Ch8 Part 1</a> | <a href="https://youtu.be/bV1FQUBIApM">Part 2</a> | <a href="https://youtu.be/GxADdpo6EP4">Part 3</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-09-dictionaries">Lesson 09: Dictionaries</h2>
+<h3 id="overview_8">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>Dictionaries as key-value pairs.</li>
+<li>Basic dictionary operations such as getting/setting keys and values</li>
+<li>Common dictionary use cases, such as representing complex objects.</li>
+<li>List of dictionary as an in-memory database of objects.</li>
+<li>Using the json library to serialize / de-serialize json data. </li>
+</ul>
+<h3 id="required-reading-viewing_8">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 9: Dictionaries](https://learn.zybooks.com)   -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/09-dictionaries.html">Severance Ch 9: Dictionaries</a></li>
+</ul>
+<h3 id="large-group-video-lecture_8">Large Group Video Lecture</h3>
+<p><a href="https://video.syr.edu/media/t/1_18cdqj3q"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_18cdqj3q/version/100011/width/970/height/575" /></a> </p>
+<h3 id="lab-walk-through_8">Lab Walk Through</h3>
+<p><a href="https://youtu.be/WIw7oXCtir0"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/WIw7oXCtir0/0.jpg" /></a></p>
+<h3 id="homework-advice_8">Homework Advice</h3>
+<p><a href="https://youtu.be/rvSZhsvNQZk"><img alt="Homework Advice" src="https://img.youtube.com/vi/rvSZhsvNQZk/0.jpg" /></a></p>
+<h3 id="more-resources_8">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/l-2_Cq60trE">End to End Example: Dictionaries, by Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody: <a href="https://youtu.be/yDDRMb-1cxI">Ch9 Part 1</a> | <a href="https://youtu.be/LRSIuH94XM4">Part 2</a> | <a href="https://youtu.be/ZDjiFB1Ib84">Part 3</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-10-http">Lesson 10: HTTP</h2>
+<h3 id="overview_9">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>Learn how HTTP, the protocol of the web works.</li>
+<li>To execute HTTP requests using Python requests</li>
+<li>De-serialize HTTP responses in JSON format into Python objects</li>
+<li>General procedure for reading and calling API&rsquo;s on the web.</li>
+</ul>
+<h3 id="required-reading-viewing_9">Required Reading / Viewing</h3>
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://ist256.github.io/readings/Web-APIs-In-Python.html">Fudge: Web API&rsquo;s In Python (Part 1 and 2)</a> </li>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/12-network.html">Severance Ch 12: Networked Programs</a></li>
+</ul>
+<h3 id="large-group-video-lecture_9">Large Group Video Lecture</h3>
+<p><a href="https://video.syr.edu/media/t/1_80034rf1"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_80034rf1/version/100011/width/970/height/575" /></a></p>
+<h3 id="lab-walk-through_9">Lab Walk Through</h3>
+<p><a href="https://youtu.be/0Zy7C8_IHNs"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/0Zy7C8_IHNs/0.jpg" /></a></p>
+<h3 id="homework-advice_9">Homework Advice</h3>
+<p><a href="https://youtu.be/RVZgMiktDlg"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/RVZgMiktDlg/0.jpg" /></a></p>
+<h3 id="more-resources_9">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/bq84DAusemo">End to End Example: Web API&rsquo;s, by Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody: <a href="https://youtu.be/Lr9Vm-VghAk">Ch12 Part 3</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-11-web-apis">Lesson 11: Web API&rsquo;s</h2>
+<h3 id="overview_10">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>How to read and use documented Web API&rsquo;s</li>
+<li>Learn how to structure API calls GET/POST, in header, url or query string.</li>
+<li>How to perform API Authentication Via Key and OAUTH2</li>
+<li>To read HTTP responses in body and headers</li>
+<li>General procedure for calling any web API.</li>
+</ul>
+<h3 id="required-reading-viewing_10">Required Reading / Viewing</h3>
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://ist256.github.io/readings/Web-APIs-In-Python.html#Part-3.-Common-Ways-web-API's-are-called">Fudge: Web Api&rsquo;s In Python (Part 3 and 4)</a></li>
+<li><i class="fa fa-book"></i> <a href="https://books.trinket.io/pfe/13-web.html">Severance Ch 13: Web Services</a> </li>
+</ul>
+<h3 id="large-group-video-lecture_10">Large Group Video Lecture</h3>
+<p><a href="https://video.syr.edu/media/t/1_yz9kkma7"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_yz9kkma7/version/100011/width/970/height/575" /></a></p>
+<h3 id="lab-walk-through_10">Lab Walk Through</h3>
+<p><a href="https://youtu.be/5Q8mHA0L4HY"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/5Q8mHA0L4HY/0.jpg" /></a></p>
+<h3 id="homework-advice_10">Homework Advice</h3>
+<p><a href="https://youtu.be/xnrYDAajhq0"><img alt="Homework Advice" src="https://img.youtube.com/vi/xnrYDAajhq0/0.jpg" /></a></p>
+<h3 id="more-resources_10">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/bq84DAusemo">End to End Example: Web API&rsquo;s, by Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> Python for Everybody:  <a href="https://youtu.be/7NEtEctD9Cw">Ch13 Part 1</a> | <a href="https://youtu.be/J5DjteDzgoM">Part 4</a>, by Charles Severance</li>
+</ul>
+<h2 id="lesson-12-pandas">Lesson 12: Pandas</h2>
+<h3 id="overview_11">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>What exactly is Pandas, What is data analysis?</li>
+<li>How can Pandas help you perform data analysis?</li>
+<li>Managing Pandas data structures.</li>
+<li>Using Pandas to read and write a variety of file formats. </li>
+</ul>
+<h3 id="required-reading-viewing_11">Required Reading / Viewing</h3>
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://ist256.github.io/readings/Data-Analysis-With-Pandas.html">Fudge: Data Analysis with Pandas</a> </li>
+<li><i class="fa fa-book"></i> <a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/tutorials.html">Official Pandas Tutorials (optional)</a></li>
+</ul>
+<h3 id="large-group-video-lecture_11">Large Group Video Lecture</h3>
+<p><a href="https://video.syr.edu/media/t/1_gs1iq4mv"><img alt="Large Group Video Lecture" src="https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_gs1iq4mv/version/100011/width/970/height/575" /></a> </p>
+<h3 id="lab-walk-through_11">Lab Walk Through</h3>
+<p><a href="https://youtu.be/w6Fq9QCZQ4w"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/w6Fq9QCZQ4w/0.jpg" /></a></p>
+<h3 id="homework-advice_11">Homework Advice</h3>
+<p><a href="https://youtu.be/knam4pH9lpY"><img alt="Homework Advice" src="https://img.youtube.com/vi/knam4pH9lpY/0.jpg" /></a></p>
+<h3 id="more-resources_11">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> <a href="https://youtu.be/_qrwCFn1A3I">End to End Example: Data Analysis in Pandas, by Michael Fudge</a></li>
+<li><i class="fa fa-video-camera"></i> <a href="https://www.youtube.com/watch?v=Iqjy9UqKKuo">Python for Data Analysis, by Sentdex</a></li>
+</ul>
+<h2 id="lesson-13-visualization">Lesson 13: Visualization</h2>
+<h3 id="overview_12">Overview</h3>
+<p>In this lesson we learn:</p>
+<ul>
+<li>Why information visualization is important</li>
+<li>The various ways to visualize information</li>
+<li>The basic requirements for any visualization</li>
+<li>How to plot complex visualizations such as multi-series charts and maps</li>
+</ul>
+<h3 id="required-reading-viewing_12">Required Reading / Viewing</h3>
+<!-- - :fa-book: [ZyBook Ch 10: Plotting](https://learn.zybooks.com) -->
+<ul>
+<li><i class="fa fa-book"></i> <a href="https://ist256.github.io/readings/Charts-Graphs-And-Maps.html">Fudge: Charts, Graphs and Maps</a></li>
+</ul>
+<h3 id="large-group-video-lecture_12">Large Group Video Lecture</h3>
+<!-- [![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_ks98bu3i/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_ks98bu3i) -->
+
+<h3 id="lab-walk-through_12">Lab Walk Through</h3>
+<p><a href="https://youtu.be/APlS-yQ5opo"><img alt="Lab Walk Through" src="https://img.youtube.com/vi/APlS-yQ5opo/0.jpg" /></a></p>
+<h3 id="homework-advice_12">Homework Advice</h3>
+<p><a href="https://youtu.be/VJfbmIY-4SA"><img alt="Homework Advice" src="https://img.youtube.com/vi/VJfbmIY-4SA/0.jpg" /></a></p>
+<h3 id="more-resources_12">More Resources</h3>
+<ul>
+<li><i class="fa fa-video-camera"></i> End to End Example: Mapping Potholes</li>
+<li><i class="fa fa-video-camera"></i> <a href="https://www.youtube.com/playlist?list=PLQVvvaa0QuDfefDfXb9Yf0la1fPDKluPF">Matplotlib Tutorial Series</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../syllabus/" class="btn btn-neutral float-left" title="Syllabus"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../links/" class="btn btn-neutral float-right" title="Course Links">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>&copy; 2021 Michael Fudge</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../syllabus/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../links/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../js/readthedocs.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
