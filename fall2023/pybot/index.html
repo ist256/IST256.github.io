@@ -8,7 +8,7 @@
     <title>PyBot - IST256</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../css/readthedocs.css" rel="stylesheet" />
     
       <script>
@@ -18,19 +18,18 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYX1X36VY3"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-WYX1X36VY3');
+        gtag('config', "G-WYX1X36VY3");
       </script>
 </head>
 
@@ -43,7 +42,7 @@
           <a href=".." class="icon icon-home"> IST256
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -69,6 +68,8 @@
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">PyBot</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#what-the">What the @#%!?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#important">!Important!</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#invoking-the-pybot">Invoking the PyBot</a>
     </li>
@@ -108,8 +109,8 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>PyBot</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">PyBot</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -124,6 +125,8 @@
 <p>This course includes an a free AI programming assistant for your use. I programmed the assistant over the 2022-2023 winter break and it makes heavy use of the <a href="https://openai.com/">OpenAI</a> GPT-3 model, which has been popularized recently by chat-GPT phenomenon <a href="https://openai.com/blog/chatgpt/">https://openai.com/blog/chatgpt/</a>. We use a special version of GPT-3 that is optimized for programming, called <strong>codex</strong> <a href="https://openai.com/blog/openai-codex/">phttps://openai.com/blog/openai-codex/</a>.</p>
 <p><strong>I created created the assistant for a single purpose: to study whether these technologies impact how students learn computer programming.</strong></p>
 <p>The assistant is called PyBot and is available only within our Jupyter Hub environment <a href="https://hub.ischool.syr.edu">https://hub.ischool.syr.edu</a>. You are welcome to use PyBot to help you with any coding tasks, including your homework and project. Think of PyBot as an always available Python tutor. </p>
+<h2 id="important">!Important!</h2>
+<p>Pybot only works on notebook files in the course folder. For example: <code>~/library/ist256/fall2023</code></p>
 <h2 id="invoking-the-pybot">Invoking the PyBot</h2>
 <p>The bot was implemented as a Jupyter magic. To use it, simply type the following command in an empty code cell:</p>
 <pre><code>%%pybot 
@@ -212,15 +215,16 @@ The temperature in Fahrenheit is:  212.0
     
   </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme_extra.js" defer></script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../js/readthedocs.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/readthedocs.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>
