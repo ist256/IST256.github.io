@@ -1,0 +1,414 @@
+
+## Lesson 02: Variables
+
+### Overview
+
+This lesson we learn:
+
+- What is a variable? What is its purpose?
+- Variable assignment, and access.
+- Different data types for variables.
+- How to input variables of various types, check types, convert types, and print variables with formatting.
+- Arithmetic expressions, arithmetic operators, and operands.
+- Different ways to format output.
+
+### Required Reading / Viewing
+
+<!-- - :fa-book: [ZyBook Ch 2: Variables And Types](https://learn.zybooks.com) -->
+- :fa-book: [Severance Ch 2: Variables, Expressions, Statements](https://books.trinket.io/pfe/02-variables.html)
+- :fa-video-camera: [End to End Example: Variables and Types, by Michael Fudge](https://youtu.be/ZZQa2Avm2YE)
+- :fa-video-camera: Python for Everybody: [Ch2 Part 1](https://youtu.be/7KHdV6FSpo8) | [Part 2](https://youtu.be/kefrGMAglGs), by Charles Severance
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+NO CLASS, Enjoy Last Semester's Lecture  
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_esrjms61/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_esrjms61) 
+    
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/YRbh6MWUjKE/0.jpg)](https://youtu.be/YRbh6MWUjKE)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/ML-UCIWEAks/0.jpg)](https://youtu.be/ML-UCIWEAks)
+
+
+## Lesson 03: Conditionals
+
+### Overview
+
+In this lesson we learn:
+
+- How to make our code execute in a non linear fashion through the use of conditionals.
+- Relational and logical operators for making Boolean expressions which form the basis of our decisions. 
+- Different types of non-linear execution like conditional execution, alternative execution, chaining, and nesting, and their appropriate uses. 
+- How to handle run-time errors with try..except.
+
+### Required Reading / Viewing
+
+<!-- - :fa-book: [ZyBook Ch 3: Conditionals](https://learn.zybooks.com) -->
+- :fa-book: [Severance Ch 3: Conditional Execution](https://books.trinket.io/pfe/03-conditional.html) 
+- :fa-video-camera: [End to End Example: Conditionals, By Michael Fudge](https://youtu.be/ZwbOSDqIrx4)
+- :fa-video-camera: Python for Everybody: [Ch3 Part 1](https://youtu.be/2aA3VBdcl6A) | [Part 2](https://youtu.be/OczkNrHPBps), by Charles Severance
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+ [![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_hzbdlh5g/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_hzbdlh5g)  
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/heJ-6ji332E/0.jpg)](https://youtu.be/heJ-6ji332E)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/O3vh1r5Efbg/0.jpg)](https://youtu.be/O3vh1r5Efbg)
+
+## Lesson 04: Iterations
+
+### Overview
+
+In this lesson we learn:
+
+- How to make our code execute in a non linear fashion through the use of iterations, or loops.
+- The while loop for indefinite looping, infinite loops, and the break and continue statements
+- How to build complex loops easily.
+- Definite loops (for loops) and iterators.
+
+### Required Reading / Viewing
+
+<!-- - :fa-book: [ZyBook Ch 4: Iterations](https://learn.zybooks.com) -->
+- :fa-book: [Severance Ch 5: Iterations](https://books.trinket.io/pfe/05-iterations.html)
+- :fa-video-camera: [End to End Example: Iterations, by Michael Fudge](https://youtu.be/8xr8boE79hU)
+- :fa-video-camera: Python for Everybody: [Ch5 Part 1](https://youtu.be/FzpurxjwmsM) | [Part 2](https://youtu.be/5QDrj5ogPYc)  | [Part 3](https://youtu.be/xsavQp8hd78)  | [Part 4](https://youtu.be/yjlMMwf9Y5I), by Charles Severance
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_f0nreoo4/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_f0nreoo4)
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/qiQYbAxJTds/0.jpg)](https://youtu.be/qiQYbAxJTds)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/dTasdLouiak/0.jpg)](https://youtu.be/dTasdLouiak)
+
+
+## Lesson 05: Functions
+
+### Overview
+
+In this lesson we learn:
+
+- How to use and discover other functions in modules.
+- How to inspect module contents and get help on functions. 
+- The anatomy of custom functions: arguments, named arguments, return values
+- How to modularize our code with custom functions.
+
+### Required Reading / Viewing
+
+<!-- - :fa-book: [ZyBook Ch 5 Functions](https://learn.zybooks.com)  -->
+- :fa-book: [Severance Ch 4: Functions](https://books.trinket.io/pfe/04-functions.html)
+- :fa-video-camera: [End to End Example: Functions, by Michael Fudge](https://youtu.be/9lj1kgQdZSg)
+- :fa-video-camera: Python for Everybody: [Ch4 Part 1](https://youtu.be/5Kzw-0-DQAk) | [Part 2](https://youtu.be/AJVNYRqn8kM), by Charles Severance
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_gm63z3eu/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_gm63z3eu)
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/3gLyp9KUFB4/0.jpg)](https://youtu.be/3gLyp9KUFB4)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/0hJjqlkItXg/0.jpg)](https://youtu.be/0hJjqlkItXg)
+
+
+## Lesson 06: Strings
+
+### Overview
+
+In this lesson we learn:
+
+- Strings as an immutable sequence of characters.
+- Index and Slice notation for retrieving sub-strings.
+- Built-in string functions to perform operations on strings.
+- Techniques for parsing and tokenizing string data.
+- How to sanitize input with string functions.
+
+### Required Reading / Viewing
+
+<!-- - :fa-book: [ZyBook Ch 6: Strings](https://learn.zybooks.com)   -->
+- :fa-book: [Severance Ch 6: Strings](https://books.trinket.io/pfe/06-strings.html)
+- :fa-video-camera: [End to End Example: Strings, by Michael Fudge](https://youtu.be/5ONnMc0rw_k)
+- Python for Everybody: [Ch6 Part 1](https://youtu.be/dr98iM4app8) | [Part 2](https://youtu.be/bIFpJ-qZ3Cc), by Charles Severance
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_bhwbii66/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_bhwbii66) 
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/StVUoVsi_NI/0.jpg)](https://youtu.be/StVUoVsi_NI)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/1Gnv6KYbWb4/0.jpg)](https://youtu.be/1Gnv6KYbWb4)
+
+## Lesson 07: Files
+
+### Overview
+
+In this lesson we learn:
+
+- The importance of a persistence layer in programming.
+- How to read, write, and append to files.
+- Techniques for reading a file a line at a time and all at once.
+- Using exception handling with files.
+- Text encodings.
+
+### Required Reading / Viewing
+
+<!-- - :fa-book: [ZyBook Ch 7: Files](https://learn.zybooks.com)   -->
+- :fa-book: [Severance Ch 7: Persistence](https://books.trinket.io/pfe/07-files.html)
+- :fa-video-camera: [End to End Example: Files, by Michael Fudge](https://youtu.be/s-1ToO0dJIs)
+- :fa-video-camera: Python for Everybody: [Ch7 Part 1](https://youtu.be/9KJ-XeQ6ZlI) | [Part 2](https://youtu.be/0t4rvnySKR4), by Charles Severance
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_47zggtt3/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_47zggtt3) 
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/NiZsQ7GJqlU/0.jpg)](https://youtu.be/NiZsQ7GJqlU)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/WKb5fKDn_Nc/0.jpg)](https://youtu.be/WKb5fKDn_Nc)
+
+## Lesson 08: Lists
+
+In this lesson we learn:
+
+- Lists as a mutable sequence of values.
+- Indexing list values; slice notation.
+- List functions and operations like add, remove, update, find
+- Common patterns for list management.
+- Parsing file data into lists.
+
+### Overview
+
+### Required Reading / Viewing
+
+<!-- - :fa-book: [ZyBook Ch 8: Lists](https://learn.zybooks.com)   -->
+- :fa-book: [Severance Ch 8: Lists](https://books.trinket.io/pfe/08-lists.html)
+- :fa-video-camera: [End to End Example: Lists, by Michael Fudge](https://youtu.be/X8QJhDTuffs)
+- :fa-video-camera: Python for Everybody: [Ch8 Part 1](https://youtu.be/ljExWqnWQvo) | [Part 2](https://youtu.be/bV1FQUBIApM) | [Part 3](https://youtu.be/GxADdpo6EP4), by Charles Severance
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_87dl73f1/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_87dl73f1) 
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/0sYoK726RRc/0.jpg)](https://youtu.be/0sYoK726RRc)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/eGnkG9Cpgvg/0.jpg)](https://youtu.be/eGnkG9Cpgvg)
+
+
+## Lesson 09: Dictionaries
+
+### Overview
+
+In this lesson we learn:
+
+- Dictionaries as key-value pairs.
+- Basic dictionary operations such as getting/setting keys and values
+- Common dictionary use cases, such as representing complex objects.
+- List of dictionary as an in-memory database of objects.
+- Using the json library to serialize / de-serialize json data. 
+
+### Required Reading / Viewing
+
+<!-- - :fa-book: [ZyBook Ch 9: Dictionaries](https://learn.zybooks.com)   -->
+- :fa-book: [Severance Ch 9: Dictionaries](https://books.trinket.io/pfe/09-dictionaries.html)
+- :fa-video-camera: [End to End Example: Dictionaries, by Michael Fudge](https://youtu.be/l-2_Cq60trE)
+- :fa-video-camera: Python for Everybody: [Ch9 Part 1](https://youtu.be/yDDRMb-1cxI) | [Part 2](https://youtu.be/LRSIuH94XM4) | [Part 3](https://youtu.be/ZDjiFB1Ib84), by Charles Severance
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_c36scyiw/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_c36scyiw) 
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/WIw7oXCtir0/0.jpg)](https://youtu.be/WIw7oXCtir0)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/rvSZhsvNQZk/0.jpg)](https://youtu.be/rvSZhsvNQZk)
+
+## Lesson 10: HTTP
+
+### Overview
+
+In this lesson we learn:
+
+- Learn how HTTP, the protocol of the web works.
+- To execute HTTP requests using Python requests
+- De-serialize HTTP responses in JSON format into Python objects
+- General procedure for reading and calling API's on the web.
+
+### Required Reading / Viewing
+
+- :fa-book: [Fudge: Web API's In Python (Part 1 and 2)](https://ist256.github.io/readings/Web-APIs-In-Python.html) 
+- :fa-book: [Severance Ch 12: Networked Programs](https://books.trinket.io/pfe/12-network.html)
+- :fa-video-camera: [End to End Example: Web API's, by Michael Fudge](https://youtu.be/bq84DAusemo)
+- :fa-video-camera: Python for Everybody: [Ch12 Part 3](https://youtu.be/Lr9Vm-VghAk), by Charles Severance
+
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_xq3slg0m/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_xq3slg0m)
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/0Zy7C8_IHNs/0.jpg)](https://youtu.be/0Zy7C8_IHNs)
+
+
+### Homework Advice
+
+[![Lab Walk Through](https://img.youtube.com/vi/RVZgMiktDlg/0.jpg)](https://youtu.be/RVZgMiktDlg)
+
+
+## Lesson 11: Web API's
+
+### Overview
+
+In this lesson we learn:
+
+- How to read and use documented Web API's
+- Learn how to structure API calls GET/POST, in header, url or query string.
+- How to perform API Authentication Via Key and OAUTH2
+- To read HTTP responses in body and headers
+- General procedure for calling any web API.
+
+### Required Reading / Viewing
+
+- :fa-book: [Fudge: Web Api's In Python (Part 3 and 4)](https://ist256.github.io/readings/Web-APIs-In-Python.html#Part-3.-Common-Ways-web-API's-are-called)
+- :fa-book: [Severance Ch 13: Web Services](https://books.trinket.io/pfe/13-web.html) 
+- :fa-video-camera: [End to End Example: Web API's, by Michael Fudge](https://youtu.be/bq84DAusemo)
+- :fa-video-camera: Python for Everybody:  [Ch13 Part 1](https://youtu.be/7NEtEctD9Cw) | [Part 4](https://youtu.be/J5DjteDzgoM), by Charles Severance
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_hsjbyt6d/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_hsjbyt6d) 
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/5Q8mHA0L4HY/0.jpg)](https://youtu.be/5Q8mHA0L4HY)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/xnrYDAajhq0/0.jpg)](https://youtu.be/xnrYDAajhq0)
+
+## Lesson 12: Pandas
+
+### Overview
+
+In this lesson we learn:
+
+- What exactly is Pandas, What is data analysis?
+- How can Pandas help you perform data analysis?
+- Managing Pandas data structures.
+- Using Pandas to read and write a variety of file formats. 
+
+### Required Reading / Viewing
+
+- :fa-book: [Fudge: Data Analysis with Pandas](https://ist256.github.io/readings/Data-Analysis-With-Pandas.html) 
+- :fa-video-camera: [End to End Example: Data Analysis in Pandas, by Michael Fudge](https://youtu.be/_qrwCFn1A3I)
+- :fa-video-camera: [Python for Data Analysis, by Sentdex](https://www.youtube.com/watch?v=Iqjy9UqKKuo)
+- :fa-book: [Official Pandas Tutorials (optional)](https://pandas.pydata.org/pandas-docs/stable/getting_started/tutorials.html)
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+**This is from last semester. The current one did not record.**
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_ppkiimrg/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_ppkiimrg)  
+
+### Lab Walk Through
+
+[![Lab Walk Through](https://img.youtube.com/vi/w6Fq9QCZQ4w/0.jpg)](https://youtu.be/w6Fq9QCZQ4w)
+
+
+### Homework Advice
+
+
+[![Homework Advice](https://img.youtube.com/vi/knam4pH9lpY/0.jpg)](https://youtu.be/knam4pH9lpY)
+
+
+## Lesson 13: Visualization
+
+### Overview
+
+In this lesson we learn:
+
+- Why information visualization is important
+- The various ways to visualize information
+- The basic requirements for any visualization
+- How to plot complex visualizations such as multi-series charts and maps
+
+### Required Reading / Viewing
+
+<!-- - :fa-book: [ZyBook Ch 10: Plotting](https://learn.zybooks.com) -->
+- Matplotlib: [https://matplotlib.org/stable/tutorials/introductory/quick_start.html](https://matplotlib.org/stable/tutorials/introductory/quick_start.html)  
+- Folium: [https://python-visualization.github.io/folium/quickstart.html](https://python-visualization.github.io/folium/quickstart.html)  
+- Plotly Express: [https://plotly.com/python/plotly-express/](https://plotly.com/python/plotly-express/)   
+- Seaborn: [https://seaborn.pydata.org/tutorial/introduction.html](https://seaborn.pydata.org/tutorial/introduction.html)  
+
+
+### Large Group Video Lecture
+
+<!-- ![notuploaded](images/notuploaded.png) -->
+
+
+[![Large Group Video Lecture](https://cfvod.kaltura.com/p/2707131/sp/0/thumbnail/entry_id/1_efkvif1a/version/100011/width/970/height/575)](https://video.syr.edu/media/t/1_efkvif1a)
+
+
+### Lab Walk Through
+
+
+[![Lab Walk Through](https://img.youtube.com/vi/APlS-yQ5opo/0.jpg)](https://youtu.be/APlS-yQ5opo)
+
+### Homework Advice
+
+[![Homework Advice](https://img.youtube.com/vi/VJfbmIY-4SA/0.jpg)](https://youtu.be/VJfbmIY-4SA)
+
+### More Resources
+
+- :fa-video-camera: End to End Example: Mapping Potholes
+- :fa-video-camera: [Matplotlib Tutorial Series](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfefDfXb9Yf0la1fPDKluPF)
